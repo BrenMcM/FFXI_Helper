@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXI.MainUI", "FFXI.MainUI\FFXI.MainUI.csproj", "{36F53D40-8BFF-4142-9A55-777B14D22A4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F53D40-8BFF-4142-9A55-777B14D22A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F53D40-8BFF-4142-9A55-777B14D22A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F53D40-8BFF-4142-9A55-777B14D22A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F53D40-8BFF-4142-9A55-777B14D22A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCD0DB89-33C4-4892-876F-EE2C9F66C873}
+	EndGlobalSection
+EndGlobal
