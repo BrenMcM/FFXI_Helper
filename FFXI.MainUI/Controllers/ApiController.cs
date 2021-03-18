@@ -504,6 +504,52 @@ namespace FFXI.MainUI.Controllers
         }
         #endregion
 
+        public static string GetStatsAddWithEquipment(string key, bool isPercentageBased)
+        {
+            int addedStat = 0;
+            foreach(EquipmentSlot slot in Enum.GetValues(typeof(EquipmentSlot)))
+            {
+                var item = GetEquippedItem(slot);
+                var itemInfo = GetItemInfo(item.Id);
+                if (itemInfo != null)
+                {
+                    var targetLine = GetTargetLine(
+                        FixEquipmentDescription(itemInfo.Description[0]).Trim(),
+                        key
+                        );
+
+                    var valueStr = targetLine.Replace("STR", "").Trim();
+                    if (isPercentageBased)
+                    {
+                        valueStr = valueStr.Replace("%", "");
+                    }
+
+                    if (!string.IsNullOrEmpty(valueStr))
+                    {
+                        var intValue = Convert.ToInt32(valueStr);
+                        addedStat += intValue;
+                    }
+                }
+            }
+
+            if (isPercentageBased)
+            {
+                return addedStat + "%";
+            } else
+            {
+                return addedStat.ToString();
+            }
+        }
+
+        private static string GetTargetLine(string description, string key)
+        {
+            foreach(var line in description.Split(new[] { Environment.NewLine }, StringSplitOptions.None))
+            {
+                if (line.StartsWith(key)) return line;
+            }
+            return "";
+        }
+
         // Check if the API is NULL
         #region public static bool IsNULL()
         public static bool IsNULL()

@@ -49,7 +49,7 @@ namespace FFXI.MainUI.UserControls
             _EarOne = GetSlotItem(EquipmentSlot.Ear1, pcbEarOne);
             _EarTwo = GetSlotItem(EquipmentSlot.Ear2, pcbEarTwo);             
             _RingOne = GetSlotItem(EquipmentSlot.Ring1, pcbRingOne);
-            _RingTwo = GetSlotItem(EquipmentSlot.Ring2, pcbRingTwo);
+            _RingTwo = GetSlotItem(EquipmentSlot.Ring2, pcbRingTwo);            
         }
         private InventoryItem GetSlotItem(EquipmentSlot slot, PictureBox display)
         {
