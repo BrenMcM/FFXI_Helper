@@ -526,8 +526,13 @@ namespace FFXI.MainUI.Controllers
 
                     if (!string.IsNullOrEmpty(valueStr))
                     {
-                        var intValue = Convert.ToInt32(valueStr);
-                        addedStat += intValue;
+                        if (valueStr.Contains("~"))
+                            addedStat += GetRajasTildedValue();
+                        else
+                        {
+                            var intValue = Convert.ToInt32(valueStr);
+                            addedStat += intValue;
+                        }                    
                     }
                 }
             }
@@ -539,6 +544,17 @@ namespace FFXI.MainUI.Controllers
             {
                 return addedStat.ToString();
             }
+        }
+
+        // FOR Raja's Ring - I need to review other tilded item specs
+        private static int GetRajasTildedValue()
+        {
+            if (PlayerMainJobLevel >= 75) return 5;
+            else if (PlayerMainJobLevel >= 60) return 4;
+            else if (PlayerMainJobLevel >= 45) return 3;
+            else if (PlayerMainJobLevel >= 30) return 2;
+            else if (PlayerMainJobLevel >= 18) return 1;
+            return 0;
         }
 
         private static string GetTargetLine(string description, string key)
