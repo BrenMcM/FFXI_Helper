@@ -518,7 +518,7 @@ namespace FFXI.MainUI.Controllers
                         key
                         );
 
-                    var valueStr = targetLine.Replace("STR", "").Trim();
+                    var valueStr = targetLine.Replace(key, "").Trim();
                     if (isPercentageBased)
                     {
                         valueStr = valueStr.Replace("%", "");
