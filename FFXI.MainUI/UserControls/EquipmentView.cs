@@ -31,6 +31,7 @@ namespace FFXI.MainUI.UserControls
         {
             InitializeComponent();
             ApiController.PlayerStatusChangedHandler += new EventHandler(UpdateEquipment);
+            ApiController.PlayerStatusChangedHandler += new EventHandler(UpdateEquippedStats);
         }
         public void UpdateEquipment(object sender, EventArgs args)
         {
@@ -51,6 +52,29 @@ namespace FFXI.MainUI.UserControls
             _RingOne = GetSlotItem(EquipmentSlot.Ring1, pcbRingOne);
             _RingTwo = GetSlotItem(EquipmentSlot.Ring2, pcbRingTwo);            
         }
+
+        public void UpdateEquippedStats(object sender, EventArgs args)
+        {
+            txtHp.Text = "+" + ApiController.GetStatsAddWithEquipment("HP", false);
+            txtMp.Text = "+" + ApiController.GetStatsAddWithEquipment("MP", false);
+            txtDmg.Text = "+" + ApiController.GetStatsAddWithEquipment("DMG:", false);
+            txtDef.Text = "+" + ApiController.GetStatsAddWithEquipment("DEF:", false);
+
+            txtStr.Text = "+" + ApiController.GetStatsAddWithEquipment("STR", false);
+            txtVit.Text = "+" + ApiController.GetStatsAddWithEquipment("VIT", false);
+            txtDex.Text = "+" + ApiController.GetStatsAddWithEquipment("DEX", false);
+            txtAgi.Text = "+" + ApiController.GetStatsAddWithEquipment("AGI", false);
+            txtInt.Text = "+" + ApiController.GetStatsAddWithEquipment("INT", false);
+            txtMnd.Text = "+" + ApiController.GetStatsAddWithEquipment("MND", false);
+            txtChr.Text = "+" + ApiController.GetStatsAddWithEquipment("CHR", false);
+
+            txtEva.Text = "+" + ApiController.GetStatsAddWithEquipment("Evasion", false);
+            txtAcc.Text = "+" + ApiController.GetStatsAddWithEquipment("Accuracy", false);
+
+            txtHaste.Text = "+" + ApiController.GetStatsAddWithEquipment("Haste", true);
+            txtFastCast.Text = "+" + ApiController.GetStatsAddWithEquipment("Fast Cast", true);
+        }
+
         private InventoryItem GetSlotItem(EquipmentSlot slot, PictureBox display)
         {
             var inventoryItem = ApiController.GetEquippedItem(slot);

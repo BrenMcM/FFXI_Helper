@@ -46,6 +46,37 @@ namespace FFXI.MainUI.UserControls
             this.pcbRanged = new System.Windows.Forms.PictureBox();
             this.pcbSub = new System.Windows.Forms.PictureBox();
             this.pcbMainHand = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtFastCast = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblHaste = new System.Windows.Forms.Label();
+            this.txtHaste = new System.Windows.Forms.TextBox();
+            this.lblEva = new System.Windows.Forms.Label();
+            this.lblAcc = new System.Windows.Forms.Label();
+            this.txtEva = new System.Windows.Forms.TextBox();
+            this.txtAcc = new System.Windows.Forms.TextBox();
+            this.lblChr = new System.Windows.Forms.Label();
+            this.lblMnd = new System.Windows.Forms.Label();
+            this.lblInt = new System.Windows.Forms.Label();
+            this.lblAgi = new System.Windows.Forms.Label();
+            this.lblVit = new System.Windows.Forms.Label();
+            this.lblDex = new System.Windows.Forms.Label();
+            this.lblStr = new System.Windows.Forms.Label();
+            this.txtChr = new System.Windows.Forms.TextBox();
+            this.txtMnd = new System.Windows.Forms.TextBox();
+            this.txtInt = new System.Windows.Forms.TextBox();
+            this.txtAgi = new System.Windows.Forms.TextBox();
+            this.txtVit = new System.Windows.Forms.TextBox();
+            this.txtDex = new System.Windows.Forms.TextBox();
+            this.txtStr = new System.Windows.Forms.TextBox();
+            this.txtDef = new System.Windows.Forms.TextBox();
+            this.txtDmg = new System.Windows.Forms.TextBox();
+            this.txtMp = new System.Windows.Forms.TextBox();
+            this.txtHp = new System.Windows.Forms.TextBox();
+            this.lblDef = new System.Windows.Forms.Label();
+            this.lblDmg = new System.Windows.Forms.Label();
+            this.lblMp = new System.Windows.Forms.Label();
+            this.lblHp = new System.Windows.Forms.Label();
             this.vwItems = new FFXI.MainUI.UserControls.ItemView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFeet)).BeginInit();
@@ -64,6 +95,7 @@ namespace FFXI.MainUI.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.pcbRanged)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMainHand)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +119,7 @@ namespace FFXI.MainUI.UserControls
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(346, 477);
+            this.panel1.Size = new System.Drawing.Size(346, 488);
             this.panel1.TabIndex = 0;
             // 
             // pcbFeet
@@ -205,6 +237,7 @@ namespace FFXI.MainUI.UserControls
             this.pcbAmmo.Size = new System.Drawing.Size(80, 80);
             this.pcbAmmo.TabIndex = 19;
             this.pcbAmmo.TabStop = false;
+            this.pcbAmmo.Tag = "Ammo";
             this.pcbAmmo.Click += new System.EventHandler(this.EquipmentSlot_Click);
             // 
             // pcbRanged
@@ -214,6 +247,7 @@ namespace FFXI.MainUI.UserControls
             this.pcbRanged.Size = new System.Drawing.Size(80, 80);
             this.pcbRanged.TabIndex = 18;
             this.pcbRanged.TabStop = false;
+            this.pcbRanged.Tag = "Ranged";
             this.pcbRanged.Click += new System.EventHandler(this.EquipmentSlot_Click);
             // 
             // pcbSub
@@ -223,6 +257,7 @@ namespace FFXI.MainUI.UserControls
             this.pcbSub.Size = new System.Drawing.Size(80, 80);
             this.pcbSub.TabIndex = 17;
             this.pcbSub.TabStop = false;
+            this.pcbSub.Tag = "Sub";
             this.pcbSub.Click += new System.EventHandler(this.EquipmentSlot_Click);
             // 
             // pcbMainHand
@@ -232,28 +267,309 @@ namespace FFXI.MainUI.UserControls
             this.pcbMainHand.Size = new System.Drawing.Size(80, 80);
             this.pcbMainHand.TabIndex = 16;
             this.pcbMainHand.TabStop = false;
+            this.pcbMainHand.Tag = "Main";
             this.pcbMainHand.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtFastCast);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblHaste);
+            this.panel2.Controls.Add(this.txtHaste);
+            this.panel2.Controls.Add(this.lblEva);
+            this.panel2.Controls.Add(this.lblAcc);
+            this.panel2.Controls.Add(this.txtEva);
+            this.panel2.Controls.Add(this.txtAcc);
+            this.panel2.Controls.Add(this.lblChr);
+            this.panel2.Controls.Add(this.lblMnd);
+            this.panel2.Controls.Add(this.lblInt);
+            this.panel2.Controls.Add(this.lblAgi);
+            this.panel2.Controls.Add(this.lblVit);
+            this.panel2.Controls.Add(this.lblDex);
+            this.panel2.Controls.Add(this.lblStr);
+            this.panel2.Controls.Add(this.txtChr);
+            this.panel2.Controls.Add(this.txtMnd);
+            this.panel2.Controls.Add(this.txtInt);
+            this.panel2.Controls.Add(this.txtAgi);
+            this.panel2.Controls.Add(this.txtVit);
+            this.panel2.Controls.Add(this.txtDex);
+            this.panel2.Controls.Add(this.txtStr);
+            this.panel2.Controls.Add(this.txtDef);
+            this.panel2.Controls.Add(this.txtDmg);
+            this.panel2.Controls.Add(this.txtMp);
+            this.panel2.Controls.Add(this.txtHp);
+            this.panel2.Controls.Add(this.lblDef);
+            this.panel2.Controls.Add(this.lblDmg);
+            this.panel2.Controls.Add(this.lblMp);
+            this.panel2.Controls.Add(this.lblHp);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(356, 10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(370, 488);
+            this.panel2.TabIndex = 1;
+            // 
+            // txtFastCast
+            // 
+            this.txtFastCast.Location = new System.Drawing.Point(253, 230);
+            this.txtFastCast.Name = "txtFastCast";
+            this.txtFastCast.Size = new System.Drawing.Size(110, 22);
+            this.txtFastCast.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(182, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Fast Cast:";
+            // 
+            // lblHaste
+            // 
+            this.lblHaste.AutoSize = true;
+            this.lblHaste.Location = new System.Drawing.Point(6, 233);
+            this.lblHaste.Name = "lblHaste";
+            this.lblHaste.Size = new System.Drawing.Size(49, 17);
+            this.lblHaste.TabIndex = 27;
+            this.lblHaste.Text = "Haste:";
+            // 
+            // txtHaste
+            // 
+            this.txtHaste.Location = new System.Drawing.Point(66, 230);
+            this.txtHaste.Name = "txtHaste";
+            this.txtHaste.Size = new System.Drawing.Size(110, 22);
+            this.txtHaste.TabIndex = 26;
+            // 
+            // lblEva
+            // 
+            this.lblEva.AutoSize = true;
+            this.lblEva.Location = new System.Drawing.Point(182, 205);
+            this.lblEva.Name = "lblEva";
+            this.lblEva.Size = new System.Drawing.Size(39, 17);
+            this.lblEva.TabIndex = 25;
+            this.lblEva.Text = "EVA:";
+            // 
+            // lblAcc
+            // 
+            this.lblAcc.AutoSize = true;
+            this.lblAcc.Location = new System.Drawing.Point(6, 205);
+            this.lblAcc.Name = "lblAcc";
+            this.lblAcc.Size = new System.Drawing.Size(39, 17);
+            this.lblAcc.TabIndex = 24;
+            this.lblAcc.Text = "ACC:";
+            // 
+            // txtEva
+            // 
+            this.txtEva.Location = new System.Drawing.Point(253, 202);
+            this.txtEva.Name = "txtEva";
+            this.txtEva.Size = new System.Drawing.Size(110, 22);
+            this.txtEva.TabIndex = 23;
+            // 
+            // txtAcc
+            // 
+            this.txtAcc.Location = new System.Drawing.Point(66, 202);
+            this.txtAcc.Name = "txtAcc";
+            this.txtAcc.Size = new System.Drawing.Size(110, 22);
+            this.txtAcc.TabIndex = 22;
+            // 
+            // lblChr
+            // 
+            this.lblChr.AutoSize = true;
+            this.lblChr.Location = new System.Drawing.Point(6, 163);
+            this.lblChr.Name = "lblChr";
+            this.lblChr.Size = new System.Drawing.Size(41, 17);
+            this.lblChr.TabIndex = 21;
+            this.lblChr.Text = "CHR:";
+            // 
+            // lblMnd
+            // 
+            this.lblMnd.AutoSize = true;
+            this.lblMnd.Location = new System.Drawing.Point(182, 135);
+            this.lblMnd.Name = "lblMnd";
+            this.lblMnd.Size = new System.Drawing.Size(43, 17);
+            this.lblMnd.TabIndex = 20;
+            this.lblMnd.Text = "MND:";
+            // 
+            // lblInt
+            // 
+            this.lblInt.AutoSize = true;
+            this.lblInt.Location = new System.Drawing.Point(6, 135);
+            this.lblInt.Name = "lblInt";
+            this.lblInt.Size = new System.Drawing.Size(34, 17);
+            this.lblInt.TabIndex = 19;
+            this.lblInt.Text = "INT:";
+            // 
+            // lblAgi
+            // 
+            this.lblAgi.AutoSize = true;
+            this.lblAgi.Location = new System.Drawing.Point(182, 107);
+            this.lblAgi.Name = "lblAgi";
+            this.lblAgi.Size = new System.Drawing.Size(35, 17);
+            this.lblAgi.TabIndex = 18;
+            this.lblAgi.Text = "AGI:";
+            // 
+            // lblVit
+            // 
+            this.lblVit.AutoSize = true;
+            this.lblVit.Location = new System.Drawing.Point(6, 107);
+            this.lblVit.Name = "lblVit";
+            this.lblVit.Size = new System.Drawing.Size(33, 17);
+            this.lblVit.TabIndex = 17;
+            this.lblVit.Text = "VIT:";
+            // 
+            // lblDex
+            // 
+            this.lblDex.AutoSize = true;
+            this.lblDex.Location = new System.Drawing.Point(182, 79);
+            this.lblDex.Name = "lblDex";
+            this.lblDex.Size = new System.Drawing.Size(40, 17);
+            this.lblDex.TabIndex = 16;
+            this.lblDex.Text = "DEX:";
+            // 
+            // lblStr
+            // 
+            this.lblStr.AutoSize = true;
+            this.lblStr.Location = new System.Drawing.Point(6, 79);
+            this.lblStr.Name = "lblStr";
+            this.lblStr.Size = new System.Drawing.Size(40, 17);
+            this.lblStr.TabIndex = 15;
+            this.lblStr.Text = "STR:";
+            // 
+            // txtChr
+            // 
+            this.txtChr.Location = new System.Drawing.Point(66, 160);
+            this.txtChr.Name = "txtChr";
+            this.txtChr.Size = new System.Drawing.Size(110, 22);
+            this.txtChr.TabIndex = 14;
+            // 
+            // txtMnd
+            // 
+            this.txtMnd.Location = new System.Drawing.Point(253, 132);
+            this.txtMnd.Name = "txtMnd";
+            this.txtMnd.Size = new System.Drawing.Size(110, 22);
+            this.txtMnd.TabIndex = 13;
+            // 
+            // txtInt
+            // 
+            this.txtInt.Location = new System.Drawing.Point(66, 132);
+            this.txtInt.Name = "txtInt";
+            this.txtInt.Size = new System.Drawing.Size(110, 22);
+            this.txtInt.TabIndex = 12;
+            // 
+            // txtAgi
+            // 
+            this.txtAgi.Location = new System.Drawing.Point(253, 104);
+            this.txtAgi.Name = "txtAgi";
+            this.txtAgi.Size = new System.Drawing.Size(110, 22);
+            this.txtAgi.TabIndex = 11;
+            // 
+            // txtVit
+            // 
+            this.txtVit.Location = new System.Drawing.Point(66, 104);
+            this.txtVit.Name = "txtVit";
+            this.txtVit.Size = new System.Drawing.Size(110, 22);
+            this.txtVit.TabIndex = 10;
+            // 
+            // txtDex
+            // 
+            this.txtDex.Location = new System.Drawing.Point(253, 76);
+            this.txtDex.Name = "txtDex";
+            this.txtDex.Size = new System.Drawing.Size(110, 22);
+            this.txtDex.TabIndex = 9;
+            // 
+            // txtStr
+            // 
+            this.txtStr.Location = new System.Drawing.Point(66, 76);
+            this.txtStr.Name = "txtStr";
+            this.txtStr.Size = new System.Drawing.Size(110, 22);
+            this.txtStr.TabIndex = 8;
+            this.txtStr.Text = "100 (176)";
+            // 
+            // txtDef
+            // 
+            this.txtDef.Location = new System.Drawing.Point(255, 34);
+            this.txtDef.Name = "txtDef";
+            this.txtDef.Size = new System.Drawing.Size(110, 22);
+            this.txtDef.TabIndex = 7;
+            // 
+            // txtDmg
+            // 
+            this.txtDmg.Location = new System.Drawing.Point(66, 34);
+            this.txtDmg.Name = "txtDmg";
+            this.txtDmg.Size = new System.Drawing.Size(110, 22);
+            this.txtDmg.TabIndex = 6;
+            // 
+            // txtMp
+            // 
+            this.txtMp.Location = new System.Drawing.Point(255, 6);
+            this.txtMp.Name = "txtMp";
+            this.txtMp.Size = new System.Drawing.Size(110, 22);
+            this.txtMp.TabIndex = 5;
+            // 
+            // txtHp
+            // 
+            this.txtHp.Location = new System.Drawing.Point(66, 6);
+            this.txtHp.Name = "txtHp";
+            this.txtHp.Size = new System.Drawing.Size(110, 22);
+            this.txtHp.TabIndex = 4;
+            // 
+            // lblDef
+            // 
+            this.lblDef.AutoSize = true;
+            this.lblDef.Location = new System.Drawing.Point(182, 37);
+            this.lblDef.Name = "lblDef";
+            this.lblDef.Size = new System.Drawing.Size(39, 17);
+            this.lblDef.TabIndex = 3;
+            this.lblDef.Text = "DEF:";
+            // 
+            // lblDmg
+            // 
+            this.lblDmg.AutoSize = true;
+            this.lblDmg.Location = new System.Drawing.Point(6, 37);
+            this.lblDmg.Name = "lblDmg";
+            this.lblDmg.Size = new System.Drawing.Size(44, 17);
+            this.lblDmg.TabIndex = 2;
+            this.lblDmg.Text = "DMG:";
+            // 
+            // lblMp
+            // 
+            this.lblMp.AutoSize = true;
+            this.lblMp.Location = new System.Drawing.Point(182, 9);
+            this.lblMp.Name = "lblMp";
+            this.lblMp.Size = new System.Drawing.Size(32, 17);
+            this.lblMp.TabIndex = 1;
+            this.lblMp.Text = "MP:";
+            // 
+            // lblHp
+            // 
+            this.lblHp.AutoSize = true;
+            this.lblHp.Location = new System.Drawing.Point(6, 9);
+            this.lblHp.Name = "lblHp";
+            this.lblHp.Size = new System.Drawing.Size(31, 17);
+            this.lblHp.TabIndex = 0;
+            this.lblHp.Text = "HP:";
             // 
             // vwItems
             // 
             this.vwItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vwItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vwItems.Location = new System.Drawing.Point(356, 10);
+            this.vwItems.Location = new System.Drawing.Point(726, 10);
             this.vwItems.Margin = new System.Windows.Forms.Padding(4);
             this.vwItems.Name = "vwItems";
             this.vwItems.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.vwItems.Size = new System.Drawing.Size(354, 477);
-            this.vwItems.TabIndex = 1;
+            this.vwItems.Size = new System.Drawing.Size(317, 488);
+            this.vwItems.TabIndex = 3;
             // 
             // EquipmentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.vwItems);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "EquipmentView";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(720, 497);
+            this.Size = new System.Drawing.Size(1053, 508);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbFeet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLegs)).EndInit();
@@ -271,6 +587,8 @@ namespace FFXI.MainUI.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.pcbRanged)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMainHand)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -294,6 +612,37 @@ namespace FFXI.MainUI.UserControls
         private System.Windows.Forms.PictureBox pcbRanged;
         private System.Windows.Forms.PictureBox pcbSub;
         private System.Windows.Forms.PictureBox pcbMainHand;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtDex;
+        private System.Windows.Forms.TextBox txtStr;
+        private System.Windows.Forms.TextBox txtDef;
+        private System.Windows.Forms.TextBox txtDmg;
+        private System.Windows.Forms.TextBox txtMp;
+        private System.Windows.Forms.TextBox txtHp;
+        private System.Windows.Forms.Label lblDef;
+        private System.Windows.Forms.Label lblDmg;
+        private System.Windows.Forms.Label lblMp;
+        private System.Windows.Forms.Label lblHp;
+        private System.Windows.Forms.TextBox txtChr;
+        private System.Windows.Forms.TextBox txtMnd;
+        private System.Windows.Forms.TextBox txtInt;
+        private System.Windows.Forms.TextBox txtAgi;
+        private System.Windows.Forms.TextBox txtVit;
+        private System.Windows.Forms.TextBox txtHaste;
+        private System.Windows.Forms.Label lblEva;
+        private System.Windows.Forms.Label lblAcc;
+        private System.Windows.Forms.TextBox txtEva;
+        private System.Windows.Forms.TextBox txtAcc;
+        private System.Windows.Forms.Label lblChr;
+        private System.Windows.Forms.Label lblMnd;
+        private System.Windows.Forms.Label lblInt;
+        private System.Windows.Forms.Label lblAgi;
+        private System.Windows.Forms.Label lblVit;
+        private System.Windows.Forms.Label lblDex;
+        private System.Windows.Forms.Label lblStr;
         private ItemView vwItems;
+        private System.Windows.Forms.TextBox txtFastCast;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHaste;
     }
 }

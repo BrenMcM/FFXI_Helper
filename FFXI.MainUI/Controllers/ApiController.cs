@@ -504,6 +504,8 @@ namespace FFXI.MainUI.Controllers
         }
         #endregion
 
+        // Pulls specific stats from equipment base upon the given key (STR, DEX, DEF: etc.)
+        #region public static string GetStatsAddWithEquipment(string key, bool isPercentageBased)
         public static string GetStatsAddWithEquipment(string key, bool isPercentageBased)
         {
             int addedStat = 0;
@@ -545,18 +547,21 @@ namespace FFXI.MainUI.Controllers
                 return addedStat.ToString();
             }
         }
-
+        #endregion
         // FOR Raja's Ring - I need to review other tilded item specs
+        #region private static int GetRajasTildedValue()
         private static int GetRajasTildedValue()
         {
             if (PlayerMainJobLevel >= 75) return 5;
             else if (PlayerMainJobLevel >= 60) return 4;
             else if (PlayerMainJobLevel >= 45) return 3;
             else if (PlayerMainJobLevel >= 30) return 2;
-            else if (PlayerMainJobLevel >= 18) return 1;
+            else if (PlayerMainJobLevel >= 18) return 1; // lSync
             return 0;
         }
-
+        #endregion
+        // Find the correct line from the equipment pieces description
+        #region private static string GetTargetLine(string description, string key)
         private static string GetTargetLine(string description, string key)
         {
             foreach(var line in description.Split(new[] { Environment.NewLine }, StringSplitOptions.None))
@@ -565,6 +570,7 @@ namespace FFXI.MainUI.Controllers
             }
             return "";
         }
+        #endregion
 
         // Check if the API is NULL
         #region public static bool IsNULL()
