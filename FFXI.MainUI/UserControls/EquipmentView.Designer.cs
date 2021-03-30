@@ -130,6 +130,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbFeet.TabIndex = 31;
             this.pcbFeet.TabStop = false;
             this.pcbFeet.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbFeet.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbFeet.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbLegs
             // 
@@ -139,6 +141,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbLegs.TabIndex = 30;
             this.pcbLegs.TabStop = false;
             this.pcbLegs.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbLegs.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbLegs.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbWaist
             // 
@@ -148,6 +152,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbWaist.TabIndex = 29;
             this.pcbWaist.TabStop = false;
             this.pcbWaist.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbWaist.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbWaist.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbBack
             // 
@@ -157,6 +163,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbBack.TabIndex = 28;
             this.pcbBack.TabStop = false;
             this.pcbBack.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbBack.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbBack.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbRingTwo
             // 
@@ -166,6 +174,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbRingTwo.TabIndex = 27;
             this.pcbRingTwo.TabStop = false;
             this.pcbRingTwo.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbRingTwo.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbRingTwo.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbRingOne
             // 
@@ -175,6 +185,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbRingOne.TabIndex = 26;
             this.pcbRingOne.TabStop = false;
             this.pcbRingOne.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbRingOne.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbRingOne.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbHands
             // 
@@ -184,6 +196,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbHands.TabIndex = 25;
             this.pcbHands.TabStop = false;
             this.pcbHands.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbHands.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbHands.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbBody
             // 
@@ -193,6 +207,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbBody.TabIndex = 24;
             this.pcbBody.TabStop = false;
             this.pcbBody.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbBody.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbBody.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbEarTwo
             // 
@@ -202,6 +218,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbEarTwo.TabIndex = 23;
             this.pcbEarTwo.TabStop = false;
             this.pcbEarTwo.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbEarTwo.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbEarTwo.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbEarOne
             // 
@@ -211,6 +229,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbEarOne.TabIndex = 22;
             this.pcbEarOne.TabStop = false;
             this.pcbEarOne.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbEarOne.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbEarOne.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbNeck
             // 
@@ -220,6 +240,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbNeck.TabIndex = 21;
             this.pcbNeck.TabStop = false;
             this.pcbNeck.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbNeck.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbNeck.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbHead
             // 
@@ -229,6 +251,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbHead.TabIndex = 20;
             this.pcbHead.TabStop = false;
             this.pcbHead.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbHead.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbHead.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbAmmo
             // 
@@ -239,6 +263,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbAmmo.TabStop = false;
             this.pcbAmmo.Tag = "Ammo";
             this.pcbAmmo.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbAmmo.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbAmmo.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbRanged
             // 
@@ -249,6 +275,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbRanged.TabStop = false;
             this.pcbRanged.Tag = "Ranged";
             this.pcbRanged.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbRanged.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbRanged.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbSub
             // 
@@ -259,6 +287,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbSub.TabStop = false;
             this.pcbSub.Tag = "Sub";
             this.pcbSub.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbSub.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbSub.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // pcbMainHand
             // 
@@ -269,6 +299,8 @@ namespace FFXI.MainUI.UserControls
             this.pcbMainHand.TabStop = false;
             this.pcbMainHand.Tag = "Main";
             this.pcbMainHand.Click += new System.EventHandler(this.EquipmentSlot_Click);
+            this.pcbMainHand.MouseLeave += new System.EventHandler(this.slot_MouseLeave);
+            this.pcbMainHand.MouseHover += new System.EventHandler(this.slot_MouseHover);
             // 
             // panel2
             // 

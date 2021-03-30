@@ -363,6 +363,14 @@ namespace FFXI.MainUI.Controllers
         }
         #endregion
 
+        // I'm just using this function locating specific values on the API
+        public static void NotUsed()
+        {
+            //var info = _Api.Player.GetPlayerInfo();
+            //var auction = _Api.
+            //var breakpoint = 0;
+        }
+
         // Checks the players current status for changes
         // if a change is detected, the PlayerStatusChangedHandler is invoked
         #region private static void CheckPlyerSate(object sender, EventArgs args)
@@ -426,8 +434,17 @@ namespace FFXI.MainUI.Controllers
                         line += c;
                     }
                 }
+
+                if (line.Trim().StartsWith("min."))
+                {
+                    temp += "min.";
+                    line = line.Substring(5);
+                }
             }
             var actual = str;
+
+            
+
             return temp + Environment.NewLine + line.Trim();
         }
         #endregion

@@ -31,10 +31,12 @@ namespace FFXI.MainUI.UserControls
         {
             InitializeComponent();
             ApiController.PlayerStatusChangedHandler += new EventHandler(UpdateEquipment);
-            ApiController.PlayerStatusChangedHandler += new EventHandler(UpdateEquippedStats);
+            ApiController.PlayerStatusChangedHandler += new EventHandler(UpdateEquippedStats);            
         }
         public void UpdateEquipment(object sender, EventArgs args)
         {
+            ApiController.NotUsed();
+
             _MainHand = GetSlotItem(EquipmentSlot.Main, pcbMainHand);
             _Sub = GetSlotItem(EquipmentSlot.Sub, pcbSub);
             _Ranged = GetSlotItem(EquipmentSlot.Range, pcbRanged);
@@ -111,6 +113,18 @@ namespace FFXI.MainUI.UserControls
             var itemId = (int)picBox.Tag;
             var item = ApiController.GetItemInfo(itemId);
             vwItems.LoadItem(item);
+        }
+
+        private void slot_MouseHover(object sender, EventArgs e)
+        {
+            var pb = (PictureBox)sender;
+            pb.BorderStyle = BorderStyle.Fixed3D;            
+        }
+
+        private void slot_MouseLeave(object sender, EventArgs e)
+        {
+            var pb = (PictureBox)sender;
+            pb.BorderStyle = BorderStyle.None;
         }
     }
 }
