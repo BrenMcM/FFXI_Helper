@@ -32,9 +32,9 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.chkBattleOnly = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkSan = new System.Windows.Forms.CheckBox();
+            this.chkNi = new System.Windows.Forms.CheckBox();
+            this.chkIchi = new System.Windows.Forms.CheckBox();
             this.grpShadowBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,9 +43,9 @@
             this.grpShadowBox.Controls.Add(this.btnStop);
             this.grpShadowBox.Controls.Add(this.btnStart);
             this.grpShadowBox.Controls.Add(this.chkBattleOnly);
-            this.grpShadowBox.Controls.Add(this.checkBox3);
-            this.grpShadowBox.Controls.Add(this.checkBox2);
-            this.grpShadowBox.Controls.Add(this.checkBox1);
+            this.grpShadowBox.Controls.Add(this.chkSan);
+            this.grpShadowBox.Controls.Add(this.chkNi);
+            this.grpShadowBox.Controls.Add(this.chkIchi);
             this.grpShadowBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpShadowBox.Location = new System.Drawing.Point(0, 0);
             this.grpShadowBox.Name = "grpShadowBox";
@@ -84,35 +84,35 @@
             this.chkBattleOnly.Text = "Cast Only In Battle";
             this.chkBattleOnly.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkSan
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 73);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(115, 20);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Utsusemi: San";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkSan.AutoSize = true;
+            this.chkSan.Location = new System.Drawing.Point(6, 73);
+            this.chkSan.Name = "chkSan";
+            this.chkSan.Size = new System.Drawing.Size(115, 20);
+            this.chkSan.TabIndex = 2;
+            this.chkSan.Text = "Utsusemi: San";
+            this.chkSan.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkNi
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 47);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(104, 20);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Utsusemi: Ni";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkNi.AutoSize = true;
+            this.chkNi.Location = new System.Drawing.Point(6, 47);
+            this.chkNi.Name = "chkNi";
+            this.chkNi.Size = new System.Drawing.Size(104, 20);
+            this.chkNi.TabIndex = 1;
+            this.chkNi.Text = "Utsusemi: Ni";
+            this.chkNi.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkIchi
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 21);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(111, 20);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Utsusemi: Ichi";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkIchi.AutoSize = true;
+            this.chkIchi.Location = new System.Drawing.Point(6, 21);
+            this.chkIchi.Name = "chkIchi";
+            this.chkIchi.Size = new System.Drawing.Size(111, 20);
+            this.chkIchi.TabIndex = 0;
+            this.chkIchi.Text = "Utsusemi: Ichi";
+            this.chkIchi.UseVisualStyleBackColor = true;
             // 
             // ShadowCaster
             // 
@@ -133,8 +133,8 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.CheckBox chkBattleOnly;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkSan;
+        private System.Windows.Forms.CheckBox chkNi;
+        private System.Windows.Forms.CheckBox chkIchi;
     }
 }

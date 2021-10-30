@@ -47,12 +47,12 @@ namespace FFXI.MainUI.UserControls.Ninja
             if(ApiController.PlayerHasBuff(StatusEffect.Utsusemi_1_Shadow_Left))
             {
                 // san
-                if (ApiController.PlayerCanCastSpellNow(MagicSpells.Utsusemi_san))
+                if (ApiController.PlayerCanCastSpellNow(MagicSpells.Utsusemi_san) && chkSan.Checked)
                 {
                     ApiController.CastSpell(MagicSpells.Utsusemi_san, "<me>");
                 }
                 // ni
-                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ni))
+                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ni) && chkNi.Checked)
                 {
                     ApiController.CastSpell(MagicSpells.Utsusemi_ni, "<me>");
                 }
@@ -65,17 +65,17 @@ namespace FFXI.MainUI.UserControls.Ninja
                 ))
             {
                 // san
-                if (ApiController.PlayerCanCastSpellNow(MagicSpells.Utsusemi_san))
+                if (ApiController.PlayerCanCastSpellNow(MagicSpells.Utsusemi_san) && chkSan.Checked)
                 {
                     ApiController.CastSpell(MagicSpells.Utsusemi_san, "<me>");
                 }
                 // ni
-                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ni))
+                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ni) && chkNi.Checked)
                 {
                     ApiController.CastSpell(MagicSpells.Utsusemi_ni, "<me>");
                 }
                 // ichi
-                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ichi))
+                else if (ApiController.PlayerHasSpell((int)MagicSpells.Utsusemi_ichi) && chkIchi.Checked)
                 {
                     ApiController.CastSpell(MagicSpells.Utsusemi_ichi, "<me>");
                 }
