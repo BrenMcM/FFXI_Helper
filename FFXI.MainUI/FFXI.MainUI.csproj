@@ -32,6 +32,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EliteMMO.API">
       <HintPath>F:\FFXI\CP\EliteMMO.API.dll</HintPath>
@@ -56,6 +76,7 @@
     <Compile Include="Enums\Abilities.cs" />
     <Compile Include="Enums\ItemContainerType.cs" />
     <Compile Include="Enums\MagicSpells.cs" />
+    <Compile Include="Enums\PlayerState.cs" />
     <Compile Include="Enums\StatusEffects.cs" />
     <Compile Include="Interfaces\IListItem.cs" />
     <Compile Include="MainForm.cs">
@@ -95,6 +116,12 @@
     </Compile>
     <Compile Include="UserControls\MagicSkillsView.Designer.cs">
       <DependentUpon>MagicSkillsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Ninja\ShadowCaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Ninja\ShadowCaster.Designer.cs">
+      <DependentUpon>ShadowCaster.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PlayerDetailsView.cs">
       <SubType>UserControl</SubType>
@@ -140,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MagicSkillsView.resx">
       <DependentUpon>MagicSkillsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Ninja\ShadowCaster.resx">
+      <DependentUpon>ShadowCaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PlayerDetailsView.resx">
       <DependentUpon>PlayerDetailsView.cs</DependentUpon>

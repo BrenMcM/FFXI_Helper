@@ -1,8 +1,6 @@
 ﻿using FFXI.MainUI.Entities;
 using FFXI.MainUI.Enums;
-using FFXI.MainUI.Interfaces;
 using System.Collections.Generic;
-using static EliteMMO.API.EliteAPI;
 
 namespace FFXI.MainUI.Controllers
 {

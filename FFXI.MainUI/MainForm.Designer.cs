@@ -38,20 +38,21 @@ namespace FFXI.MainUI
             this.lblMainStatus = new System.Windows.Forms.Label();
             this.tcMain = new System.Windows.Forms.TabControl();
             this.tpgPlayerDetails = new System.Windows.Forms.TabPage();
+            this.playerDetailsView1 = new FFXI.MainUI.UserControls.PlayerDetailsView();
             this.tpgInventory = new System.Windows.Forms.TabPage();
             this.tpgPlayerSpells = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.playerDetailsView1 = new FFXI.MainUI.UserControls.PlayerDetailsView();
-            this.inventoryView1 = new FFXI.MainUI.UserControls.InventoryView();
             this.vwPlayerSpells = new FFXI.MainUI.UserControls.SpellsView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.equipmentView1 = new FFXI.MainUI.UserControls.EquipmentView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.shadowCaster1 = new FFXI.MainUI.UserControls.Ninja.ShadowCaster();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tcMain.SuspendLayout();
             this.tpgPlayerDetails.SuspendLayout();
-            this.tpgInventory.SuspendLayout();
             this.tpgPlayerSpells.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -116,6 +117,7 @@ namespace FFXI.MainUI
             this.tcMain.Controls.Add(this.tpgInventory);
             this.tcMain.Controls.Add(this.tpgPlayerSpells);
             this.tcMain.Controls.Add(this.tabPage1);
+            this.tcMain.Controls.Add(this.tabPage2);
             this.tcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcMain.Enabled = false;
             this.tcMain.Location = new System.Drawing.Point(0, 28);
@@ -138,9 +140,16 @@ namespace FFXI.MainUI
             this.tpgPlayerDetails.Text = "Player Details";
             this.tpgPlayerDetails.UseVisualStyleBackColor = true;
             // 
+            // playerDetailsView1
+            // 
+            this.playerDetailsView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.playerDetailsView1.Location = new System.Drawing.Point(4, 4);
+            this.playerDetailsView1.Name = "playerDetailsView1";
+            this.playerDetailsView1.Size = new System.Drawing.Size(1051, 509);
+            this.playerDetailsView1.TabIndex = 0;
+            // 
             // tpgInventory
             // 
-            this.tpgInventory.Controls.Add(this.inventoryView1);
             this.tpgInventory.Location = new System.Drawing.Point(4, 25);
             this.tpgInventory.Margin = new System.Windows.Forms.Padding(4);
             this.tpgInventory.Name = "tpgInventory";
@@ -156,10 +165,18 @@ namespace FFXI.MainUI
             this.tpgPlayerSpells.Location = new System.Drawing.Point(4, 25);
             this.tpgPlayerSpells.Name = "tpgPlayerSpells";
             this.tpgPlayerSpells.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgPlayerSpells.Size = new System.Drawing.Size(1059, 514);
+            this.tpgPlayerSpells.Size = new System.Drawing.Size(1059, 517);
             this.tpgPlayerSpells.TabIndex = 2;
             this.tpgPlayerSpells.Text = "Magic Spells";
             this.tpgPlayerSpells.UseVisualStyleBackColor = true;
+            // 
+            // vwPlayerSpells
+            // 
+            this.vwPlayerSpells.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vwPlayerSpells.Location = new System.Drawing.Point(3, 3);
+            this.vwPlayerSpells.Name = "vwPlayerSpells";
+            this.vwPlayerSpells.Size = new System.Drawing.Size(1053, 511);
+            this.vwPlayerSpells.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -172,32 +189,6 @@ namespace FFXI.MainUI
             this.tabPage1.Text = "Equipment";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // playerDetailsView1
-            // 
-            this.playerDetailsView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.playerDetailsView1.Location = new System.Drawing.Point(4, 4);
-            this.playerDetailsView1.Name = "playerDetailsView1";
-            this.playerDetailsView1.Size = new System.Drawing.Size(1051, 509);
-            this.playerDetailsView1.TabIndex = 0;
-            // 
-            // inventoryView1
-            // 
-            this.inventoryView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryView1.Location = new System.Drawing.Point(4, 4);
-            this.inventoryView1.Margin = new System.Windows.Forms.Padding(5);
-            this.inventoryView1.Name = "inventoryView1";
-            this.inventoryView1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.inventoryView1.Size = new System.Drawing.Size(1051, 509);
-            this.inventoryView1.TabIndex = 0;
-            // 
-            // vwPlayerSpells
-            // 
-            this.vwPlayerSpells.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vwPlayerSpells.Location = new System.Drawing.Point(3, 3);
-            this.vwPlayerSpells.Name = "vwPlayerSpells";
-            this.vwPlayerSpells.Size = new System.Drawing.Size(1053, 508);
-            this.vwPlayerSpells.TabIndex = 0;
-            // 
             // equipmentView1
             // 
             this.equipmentView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -206,6 +197,24 @@ namespace FFXI.MainUI
             this.equipmentView1.Padding = new System.Windows.Forms.Padding(10);
             this.equipmentView1.Size = new System.Drawing.Size(1053, 511);
             this.equipmentView1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.shadowCaster1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1059, 517);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "Ninja";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // shadowCaster1
+            // 
+            this.shadowCaster1.Location = new System.Drawing.Point(8, 6);
+            this.shadowCaster1.Name = "shadowCaster1";
+            this.shadowCaster1.Size = new System.Drawing.Size(334, 127);
+            this.shadowCaster1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -218,14 +227,15 @@ namespace FFXI.MainUI
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tcMain.ResumeLayout(false);
             this.tpgPlayerDetails.ResumeLayout(false);
-            this.tpgInventory.ResumeLayout(false);
             this.tpgPlayerSpells.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,12 +252,14 @@ namespace FFXI.MainUI
         private System.Windows.Forms.TabControl tcMain;
         private System.Windows.Forms.TabPage tpgPlayerDetails;
         private System.Windows.Forms.TabPage tpgInventory;
-        private UserControls.InventoryView inventoryView1;
+        private UserControls.InventoryView InventoryView;
         private UserControls.PlayerDetailsView playerDetailsView1;
         private System.Windows.Forms.TabPage tpgPlayerSpells;
         private UserControls.SpellsView vwPlayerSpells;
         private System.Windows.Forms.TabPage tabPage1;
         private UserControls.EquipmentView equipmentView1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private UserControls.Ninja.ShadowCaster shadowCaster1;
     }
 }
 

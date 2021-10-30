@@ -1,7 +1,11 @@
 ﻿using EliteMMO.API;
+using FFXI.MainUI.Enums;
 using System;
 using System.Windows.Forms;
 using static EliteMMO.API.EliteAPI;
+using @worker = System.ComponentModel;
+using @threading = System.Threading;
+using System.ComponentModel;
 
 namespace FFXI.MainUI.Controllers
 {
@@ -22,10 +26,29 @@ namespace FFXI.MainUI.Controllers
                 {
                     _Timer = new Timer();
                     _Timer.Interval = (1 * 1000);
-                    _Timer.Tick += new EventHandler(CheckPlyerSate);
+                    _Timer.Tick += new EventHandler(CheckPlayerSate);
+                    _Timer.Tick += PluginTimerEventHandler;
                     _Timer.Start();
                 }
             }
+        }
+        #endregion
+
+
+        private static worker.BackgroundWorker _SpellCastProtection;
+        #region public static worker.BackgroundWorker SpellCastProtection
+        public static worker.BackgroundWorker SpellCastProtection
+        {
+            get             
+            { 
+                if (_SpellCastProtection == null)
+                {
+                    _SpellCastProtection = new worker.BackgroundWorker();
+                    _SpellCastProtection.DoWork += CastSpellProtectionWorker;
+                }
+
+                return _SpellCastProtection;
+            }            
         }
         #endregion
 
@@ -34,7 +57,9 @@ namespace FFXI.MainUI.Controllers
         
         // Event Handler for updating UI components each timer the players status changes
         public static event EventHandler PlayerStatusChangedHandler;
+        public static event EventHandler PluginTimerEventHandler;
         public static Timer _Timer;
+        public static bool IsCasting = false;
 
         // Basic Player Details
         #region public static string PlayerName
@@ -366,7 +391,7 @@ namespace FFXI.MainUI.Controllers
         // Checks the players current status for changes
         // if a change is detected, the PlayerStatusChangedHandler is invoked
         #region private static void CheckPlyerSate(object sender, EventArgs args)
-        private static void CheckPlyerSate(object sender, EventArgs args)
+        private static void CheckPlayerSate(object sender, EventArgs args)
         {
             if (((int)Api.Player.Status) != _currentPlayerStatus)
             {
@@ -376,6 +401,28 @@ namespace FFXI.MainUI.Controllers
                     PlayerStatusChangedHandler.Invoke(sender, args);
                 }
             }
+        }
+        #endregion
+
+        public static bool PlayerIsAttacking()
+        {
+            return Api.Player.Status == (uint)PlayerState.Fighting;
+        }
+
+        public static bool PlayerIsStanding()
+        {
+            return Api.Player.Status == (uint)PlayerState.Standing;
+        }
+
+        // Check if the player has the specified Buff/Status Effect 
+        #region public static bool PlayerHasBuff(StatusEffect buff)
+        public static bool PlayerHasBuff(StatusEffect buff)
+        {
+            foreach (StatusEffect monitoredEffect in _Api.Player.Buffs)
+            {
+                if (monitoredEffect == buff) return true;
+            }
+            return false;
         }
         #endregion
 
@@ -445,11 +492,65 @@ namespace FFXI.MainUI.Controllers
             return _Api.Resources.GetSpell(spellId);
         }
         #endregion
+        #region public static void CastSpell(MagicSpells spell, string target)
+        public static void CastSpell(MagicSpells spell, string target)
+        {
+            if (!ApiController.SpellCastProtection.IsBusy)
+            {
+                ApiController.IsCasting = true;
+                var ms = GetSpellInfo((int)spell);
+                _Api.ThirdParty.SendString("/ma \"" + ms.Name[0] + "\" " + target);
+                ApiController.SpellCastProtection.RunWorkerAsync();
+                ApiController.IsCasting = false;
+            }
+        }
+        #endregion
         // Get the current recast time for a specific Spell
         #region public static int GetSpellRecastTimer(ushort index)
         public static int GetSpellRecastTimer(ushort index)
         {
             return _Api.Recast.GetSpellRecast(index);
+        }
+        #endregion
+        // Checks to see if the Player can cast the specified spell Now
+        #region public static bool PlayerCanCastSpellNow(MagicSpells spell)
+        public static bool PlayerCanCastSpellNow(MagicSpells spell)
+        {
+            if (SpellCastProtection.IsBusy) return false;
+
+            var ms = ApiController.GetSpellInfo((int)spell);
+            return PlayerHasSpell((int)MagicSpells.Utsusemi_san) &&
+                    GetSpellRecastTimer(ms.Index) <= 0;
+        }
+        #endregion
+        // Monitors the FFXI CastBar tn ensure we dont spam SpellCasting
+        #region public static void CastSpellProtectionWorker(object sender, DoWorkEventArgs args)
+        public static void CastSpellProtectionWorker(object sender, DoWorkEventArgs args)
+        {
+            threading.Thread.Sleep(TimeSpan.FromSeconds(1.0));
+            int count = 0;
+            float lastPercent = 0;
+            float castPercent = _Api.CastBar.Percent;
+
+            while (castPercent < 1)
+            {                
+                if (lastPercent != castPercent)
+                {
+                    count = 0;
+                    lastPercent = castPercent;
+                }
+                else if (count == 10)
+                {
+                    break;
+                }
+                else
+                {
+                    count ++;
+                    lastPercent = castPercent;
+                }
+            }
+
+            threading.Thread.Sleep(TimeSpan.FromSeconds(2.0));
         }
         #endregion
 

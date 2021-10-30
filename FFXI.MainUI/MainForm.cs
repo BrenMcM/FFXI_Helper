@@ -15,7 +15,11 @@ namespace FFXI.MainUI
 
         public MainForm()
         {
-            InitializeComponent();
+            InitializeComponent();            
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
             LoadProcesses();
         }
 
@@ -45,6 +49,6 @@ namespace FFXI.MainUI
             lblMainStatus.BackColor = Color.Green;
             lblMainStatus.Text = "Connected: " + ApiController.PlayerName;
             tcMain.Enabled = true;
-        }
+        }        
     }
 }
