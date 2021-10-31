@@ -13,7 +13,7 @@ namespace FFXI.MainUI.UserControls
         public InventoryView()
         {
             InitializeComponent();
-            LoadInventoryNames();
+            ApiController.PlayerStatusChangedHandler += LoadInventoryNames;
         }
 
         public void UpdateView()
@@ -24,7 +24,7 @@ namespace FFXI.MainUI.UserControls
             }
         }
 
-        private void LoadInventoryNames()
+        private void LoadInventoryNames(object sender, EventArgs args) 
         {
             List<ListItem> items = new List<ListItem>();
             foreach (ItemContainerType it in (ItemContainerType[])Enum.GetValues(typeof(ItemContainerType)))
@@ -45,7 +45,17 @@ namespace FFXI.MainUI.UserControls
         {
             if (!ApiController.IsNULL())
             {
-                var containerId = (int)lsbInventories.SelectedValue;
+                int containerId = 0;
+                try
+                {
+                    containerId = (int)((ListItem)lsbInventories.SelectedValue).Value;
+
+                }
+                catch (Exception ex)
+                {
+                    containerId = (int)lsbInventories.SelectedValue;
+                }
+
                 var items = InventoryController.GetContainerItems(containerId);
                 lsbItems.DataSource = items;
                 lsbItems.ValueMember = "ItemId";

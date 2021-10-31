@@ -6,6 +6,8 @@ using static EliteMMO.API.EliteAPI;
 using @worker = System.ComponentModel;
 using @threading = System.Threading;
 using System.ComponentModel;
+using System.Collections.Generic;
+using System.Text;
 
 namespace FFXI.MainUI.Controllers
 {
@@ -388,6 +390,21 @@ namespace FFXI.MainUI.Controllers
         }
         #endregion
 
+        // Weapon Skills
+        public static List<string> GetPlayerWeaponSkills()
+        {
+            var lst = new List<string>();
+            foreach (var ws in Enum.GetValues(typeof(Abilities)))
+            {
+                if (_Api.Player.HasWeaponSkill((uint)ws))
+                {
+                    var ab = _Api.Resources.GetAbility((uint)ws);
+                    lst.Add(ab.Name[0]);
+                }
+            }
+            return lst;
+        }
+
         // Checks the players current status for changes
         // if a change is detected, the PlayerStatusChangedHandler is invoked
         #region private static void CheckPlyerSate(object sender, EventArgs args)
@@ -431,18 +448,19 @@ namespace FFXI.MainUI.Controllers
         public static string FixEquipmentDescription(string str)
         {
             // Sanitize first
-            str = str.Replace("\u001f", "Fire");
-            str = str.Replace("$", "Water");
-            str = str.Replace("� ", "Ice");
-            str = str.Replace("�!", "Wind");
-            str = str.Replace("#", "Earth");
-            str = str.Replace("�", "");
-            str = str.Replace("\"", "");
+            StringBuilder strb = new StringBuilder(str);
+            strb.Replace("\u001f", "Fire");
+            strb.Replace("$", "Water");
+            strb.Replace("� ", "Ice");
+            strb.Replace("�!", "Wind");
+            strb.Replace("#", "Earth");
+            strb.Replace("�", "");
+            strb.Replace("\"", "");
 
             string temp = string.Empty;
             string line = string.Empty;
             bool slicer = false;
-            foreach(char c in str) 
+            foreach(char c in strb.ToString()) 
             {
                 if(Char.IsNumber(c) || c == '`')
                 {
@@ -672,6 +690,24 @@ namespace FFXI.MainUI.Controllers
             return "";
         }
         #endregion
+
+        // Party Tools
+        public static List<PartyMember> GetPartyMembers()
+        {
+            var pt = _Api.Party.GetPartyMembers();
+            var al = _Api.Party.GetAllianceInfo();
+            return _Api.Party.GetPartyMembers();
+        }
+
+        public static AllianceInfo GetAllianceInfo()
+        {
+            return _Api.Party.GetAllianceInfo();
+        }
+
+        public static PartyMember GetPartyMember(int index)
+        {
+            return _Api.Party.GetPartyMember(index);
+        }
 
         // Check if the API is NULL
         #region public static bool IsNULL()

@@ -108,9 +108,14 @@ namespace FFXI.MainUI.UserControls
         private void EquipmentSlot_Click(object sender, EventArgs e)
         {
             var picBox = (PictureBox)sender;
-            var itemId = (int)picBox.Tag;
-            var item = ApiController.GetItemInfo(itemId);
-            vwItems.LoadItem(item);
+
+            try
+            {
+                var itemId = (int)picBox.Tag;
+                var item = ApiController.GetItemInfo(itemId);
+                vwItems.LoadItem(item);
+            }
+            catch (Exception ex) { }           
         }
     }
 }

@@ -123,6 +123,18 @@
     <Compile Include="UserControls\Ninja\ShadowCaster.Designer.cs">
       <DependentUpon>ShadowCaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\PartyMemberView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PartyMemberView.Designer.cs">
+      <DependentUpon>PartyMemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PartyView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PartyView.Designer.cs">
+      <DependentUpon>PartyView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\PlayerDetailsView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </Compile>
     <Compile Include="UserControls\SpellsView.Designer.cs">
       <DependentUpon>SpellsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trusts\TrustRecastView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Trusts\TrustRecastView.Designer.cs">
+      <DependentUpon>TrustRecastView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -171,6 +189,12 @@
     <EmbeddedResource Include="UserControls\Ninja\ShadowCaster.resx">
       <DependentUpon>ShadowCaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PartyMemberView.resx">
+      <DependentUpon>PartyMemberView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PartyView.resx">
+      <DependentUpon>PartyView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PlayerDetailsView.resx">
       <DependentUpon>PlayerDetailsView.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SpellsView.resx">
       <DependentUpon>SpellsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Trusts\TrustRecastView.resx">
+      <DependentUpon>TrustRecastView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

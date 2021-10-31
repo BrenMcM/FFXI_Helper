@@ -103,6 +103,8 @@ namespace FFXI.MainUI.UserControls
 
             bool CanCastSpell(ISpell spell)
             {
+                if (spell == null) return false;
+
                 int mainJobRequired = spell
                     .LevelRequired[(ApiController.PlayerMainJob)];
                 int subJobRequired = spell
