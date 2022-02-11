@@ -1,0 +1,2041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\73.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\92.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\113.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\142.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\146.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\148.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\159.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\165.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\179.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\183.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\184.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\185.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\188.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\190.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\194.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\195.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\197.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\198.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\199.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\204.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\205.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\207.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\218.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\224.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\227.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\231.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="233" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\233.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\234.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\236.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="237" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\237.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="238" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="239" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\239.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\242.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\243.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\245.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="246" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\246.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="247" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\247.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="249" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\249.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="250" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\250.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\252.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\255.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="257" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\257.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="258" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\258.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="259" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\259.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="260" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="262" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\262.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\264.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="266" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\266.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="267" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\267.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="268" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\268.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="269" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\269.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\272.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\273.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="274" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\274.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\276.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="277" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\277.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="278" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\278.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="279" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\279.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\282.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="283" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\283.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="284" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\284.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="285" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\285.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="286" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\286.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="287" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\287.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\288.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\289.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\292.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="293" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\293.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\294.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\295.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\296.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\297.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="298" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\298.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\299.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="302" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\303.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="304" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\304.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="305" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\305.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="306" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\306.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\307.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="308" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\308.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="309" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\309.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\310.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\313.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="314" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\314.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="315" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\315.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="316" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="318" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\318.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="319" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\319.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\320.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\324.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\326.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="327" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\327.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="328" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\328.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="329" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\329.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="332" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\332.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="333" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="334" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\334.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="335" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\335.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\337.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="338" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\338.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="339" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\339.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="340" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\340.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="341" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\341.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="342" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\342.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="344" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\344.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="345" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="346" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\346.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="347" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\347.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="348" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\348.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="349" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\349.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="352" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\352.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="353" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\353.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="354" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\354.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="355" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\355.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="356" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\356.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="357" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\357.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="358" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\358.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="359" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\359.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\360.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="362" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\362.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="363" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\363.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="364" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="365" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\365.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="366" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\366.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="367" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="368" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\368.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="369" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\369.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="370" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\370.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="371" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\371.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="372" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\372.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="373" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\373.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="374" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\374.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="375" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\375.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="376" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\376.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\377.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="378" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\378.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="379" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\379.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="380" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\380.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="381" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="382" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\382.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="383" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\383.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="384" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\384.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="385" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\385.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\386.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\387.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="388" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\388.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="389" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\389.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="390" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\390.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="391" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\391.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\392.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="393" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\393.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\394.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="395" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\395.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="396" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\396.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="397" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\397.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="398" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\398.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\399.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="402" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\402.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="403" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\403.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="405" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\405.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="406" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\406.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\407.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="408" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\408.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="409" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\409.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\410.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="412" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\412.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="413" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\413.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="414" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\414.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="415" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\415.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="416" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\416.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\417.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="418" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\418.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="419" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="420" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\420.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="422" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\422.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="423" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\423.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="424" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\424.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="425" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\425.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="426" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\426.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="427" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="428" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\428.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="429" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="430" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\430.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="431" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="433" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="435" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="436" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\436.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="437" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="438" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\438.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="439" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\439.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\441.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="442" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\442.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="444" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\444.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="445" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\445.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\446.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="447" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\447.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="448" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\448.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="449" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\449.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="450" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="451" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\451.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="452" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\452.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\453.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="454" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\454.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="455" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\455.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="456" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\456.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="457" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\457.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\458.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="459" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\459.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="460" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\460.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\461.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\462.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="463" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\463.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="464" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\464.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="465" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\465.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="466" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\466.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="467" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\468.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="469" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\469.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="470" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\470.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="472" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\472.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="473" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\473.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="475" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\475.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="476" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="477" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\477.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="478" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\478.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="479" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\479.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="482" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\482.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="483" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\483.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="484" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\484.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="485" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\485.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="488" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\488.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="489" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="490" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\490.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="492" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\492.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="494" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\494.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="495" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\495.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="496" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\496.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="497" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\497.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="498" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="499" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\499.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="503" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\503.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="504" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="505" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="506" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\506.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="508" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\508.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="509" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="513" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\513.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="514" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\514.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="515" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="517" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\517.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="518" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\518.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="519" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\519.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="520" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\520.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="523" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="524" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\524.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="525" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\525.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="526" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\526.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="527" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\527.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="528" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\528.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="529" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\529.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="530" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\530.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="531" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\531.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\532.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="533" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\533.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="535" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\535.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="536" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\536.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="537" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\537.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="538" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\538.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\539.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\542.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="543" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\543.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="544" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="545" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\545.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\546.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="547" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="548" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\548.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="549" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\549.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="550" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\550.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\552.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="553" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\553.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="554" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="555" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\555.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="556" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\556.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="557" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\557.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\558.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="559" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\559.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="560" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\560.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="562" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\562.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="563" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\563.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="565" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\565.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="566" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\566.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="567" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\567.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="568" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\568.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="569" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\569.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="570" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\570.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="571" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\571.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="572" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\572.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="573" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\573.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="574" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\574.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="575" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\575.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="576" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\576.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="577" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\577.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="578" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\578.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="579" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\579.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="580" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\580.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="582" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\582.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="583" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\583.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="584" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\584.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="585" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\585.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\586.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="587" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\587.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="588" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\588.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="589" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\589.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="590" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\590.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\591.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="592" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\592.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="593" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="594" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\594.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="595" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\595.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="596" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\596.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\597.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="598" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\598.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="599" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\599.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="603" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\603.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="604" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="605" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\605.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="606" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\606.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="607" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\607.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="608" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\608.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="609" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\609.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="610" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\610.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="611" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\611.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\612.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="613" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\613.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="614" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\614.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="615" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\615.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\616.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="617" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\617.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="618" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\618.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="619" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\619.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="620" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\620.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="621" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\621.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="622" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\622.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="623" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\623.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="624" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\624.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="625" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\625.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="626" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\626.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="627" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\627.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="628" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\628.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="629" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\629.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="630" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\630.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="631" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\631.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="632" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\632.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="633" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\633.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="634" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\634.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="635" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\635.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="636" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\636.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="637" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\637.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="638" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\638.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="639" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FFXI PNG Status Icons\639.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

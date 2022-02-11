@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DF12EFC-1F37-420E-9AAC-5E63DD5F0793}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FFXi.Entourage_2</RootNamespace>
+    <AssemblyName>FFXi.Entourage_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EliteMMO.API">
+      <HintPath>F:\FFXI\CP\EliteMMO.API.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryAPI">
+      <HintPath>F:\FFXI\Code\EasyFarm\MemoryAPI\bin\Debug\MemoryAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Member.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="CustomEventArgs\BuffRemovedEventArgs.cs" />
+    <Compile Include="CustomEventArgs\MemberUpdateEventArgs.cs" />
+    <Compile Include="Entities\AddMemberResult.cs" />
+    <Compile Include="Entities\Coordinate.cs" />
+    <Compile Include="Entities\PlayerItem.cs" />
+    <Compile Include="Enums\AddMemberResultType.cs" />
+    <Compile Include="Enums\ItemContainerType.cs" />
+    <Compile Include="Enums\PlayerState.cs" />
+    <Compile Include="Enums\StatusEffects.cs" />
+    <Compile Include="Enums\ZoneNames.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapAI\MapObject.cs" />
+    <Compile Include="MapAI\MapPoint3D.cs" />
+    <Compile Include="MapAI\Map.cs" />
+    <Compile Include="MapAI\WorldMap.cs" />
+    <Compile Include="MapViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapViewer.Designer.cs">
+      <DependentUpon>MapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSelector.Designer.cs">
+      <DependentUpon>MemberSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartyMemberView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartyMemberView.Designer.cs">
+      <DependentUpon>PartyMemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\ClientState.cs" />
+    <Compile Include="Unity\UnityServer.cs" />
+    <Compile Include="UserControls\UcAbilities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcAbilities.Designer.cs">
+      <DependentUpon>UcAbilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcBuff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcBuff.Designer.cs">
+      <DependentUpon>UcBuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcInventories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcInventories.Designer.cs">
+      <DependentUpon>UcInventories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcMemberBuffs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcMemberBuffs.Designer.cs">
+      <DependentUpon>UcMemberBuffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcMemberInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcMemberInventory.Designer.cs">
+      <DependentUpon>UcMemberInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcWeaponSkills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcWeaponSkills.Designer.cs">
+      <DependentUpon>UcWeaponSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UsSpells.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UsSpells.Designer.cs">
+      <DependentUpon>UsSpells.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapViewer.resx">
+      <DependentUpon>MapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSelector.resx">
+      <DependentUpon>MemberSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartyMemberView.resx">
+      <DependentUpon>PartyMemberView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UcAbilities.resx">
+      <DependentUpon>UcAbilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcBuff.resx">
+      <DependentUpon>UcBuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcInventories.resx">
+      <DependentUpon>UcInventories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcMemberBuffs.resx">
+      <DependentUpon>UcMemberBuffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcMemberInventory.resx">
+      <DependentUpon>UcMemberInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcWeaponSkills.resx">
+      <DependentUpon>UcWeaponSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UsSpells.resx">
+      <DependentUpon>UsSpells.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FFXI PNG Status Icons\0.png" />
+    <Resource Include="FFXI PNG Status Icons\1.png" />
+    <Resource Include="FFXI PNG Status Icons\10.png" />
+    <Resource Include="FFXI PNG Status Icons\100.png" />
+    <Resource Include="FFXI PNG Status Icons\101.png" />
+    <Resource Include="FFXI PNG Status Icons\102.png" />
+    <Resource Include="FFXI PNG Status Icons\103.png" />
+    <Resource Include="FFXI PNG Status Icons\104.png" />
+    <Resource Include="FFXI PNG Status Icons\105.png" />
+    <Resource Include="FFXI PNG Status Icons\106.png" />
+    <Resource Include="FFXI PNG Status Icons\107.png" />
+    <Resource Include="FFXI PNG Status Icons\108.png" />
+    <Resource Include="FFXI PNG Status Icons\109.png" />
+    <Resource Include="FFXI PNG Status Icons\11.png" />
+    <Resource Include="FFXI PNG Status Icons\110.png" />
+    <Resource Include="FFXI PNG Status Icons\111.png" />
+    <Resource Include="FFXI PNG Status Icons\112.png" />
+    <Resource Include="FFXI PNG Status Icons\113.png" />
+    <Resource Include="FFXI PNG Status Icons\114.png" />
+    <Resource Include="FFXI PNG Status Icons\115.png" />
+    <Resource Include="FFXI PNG Status Icons\116.png" />
+    <Resource Include="FFXI PNG Status Icons\117.png" />
+    <Resource Include="FFXI PNG Status Icons\118.png" />
+    <Resource Include="FFXI PNG Status Icons\119.png" />
+    <Resource Include="FFXI PNG Status Icons\12.png" />
+    <Resource Include="FFXI PNG Status Icons\120.png" />
+    <Resource Include="FFXI PNG Status Icons\121.png" />
+    <Resource Include="FFXI PNG Status Icons\122.png" />
+    <Resource Include="FFXI PNG Status Icons\123.png" />
+    <Resource Include="FFXI PNG Status Icons\124.png" />
+    <Resource Include="FFXI PNG Status Icons\125.png" />
+    <Resource Include="FFXI PNG Status Icons\126.png" />
+    <Resource Include="FFXI PNG Status Icons\127.png" />
+    <Resource Include="FFXI PNG Status Icons\128.png" />
+    <Resource Include="FFXI PNG Status Icons\129.png" />
+    <Resource Include="FFXI PNG Status Icons\13.png" />
+    <Resource Include="FFXI PNG Status Icons\130.png" />
+    <Resource Include="FFXI PNG Status Icons\131.png" />
+    <Resource Include="FFXI PNG Status Icons\132.png" />
+    <Resource Include="FFXI PNG Status Icons\133.png" />
+    <Resource Include="FFXI PNG Status Icons\134.png" />
+    <Resource Include="FFXI PNG Status Icons\135.png" />
+    <Resource Include="FFXI PNG Status Icons\136.png" />
+    <Resource Include="FFXI PNG Status Icons\137.png" />
+    <Resource Include="FFXI PNG Status Icons\138.png" />
+    <Resource Include="FFXI PNG Status Icons\139.png" />
+    <Resource Include="FFXI PNG Status Icons\14.png" />
+    <Resource Include="FFXI PNG Status Icons\140.png" />
+    <Resource Include="FFXI PNG Status Icons\141.png" />
+    <Resource Include="FFXI PNG Status Icons\142.png" />
+    <Resource Include="FFXI PNG Status Icons\143.png" />
+    <Resource Include="FFXI PNG Status Icons\144.png" />
+    <Resource Include="FFXI PNG Status Icons\145.png" />
+    <Resource Include="FFXI PNG Status Icons\146.png" />
+    <Resource Include="FFXI PNG Status Icons\147.png" />
+    <Resource Include="FFXI PNG Status Icons\148.png" />
+    <Resource Include="FFXI PNG Status Icons\149.png" />
+    <Resource Include="FFXI PNG Status Icons\15.png" />
+    <Resource Include="FFXI PNG Status Icons\150.png" />
+    <Resource Include="FFXI PNG Status Icons\151.png" />
+    <Resource Include="FFXI PNG Status Icons\152.png" />
+    <Resource Include="FFXI PNG Status Icons\153.png" />
+    <Resource Include="FFXI PNG Status Icons\154.png" />
+    <Resource Include="FFXI PNG Status Icons\155.png" />
+    <Resource Include="FFXI PNG Status Icons\156.png" />
+    <Resource Include="FFXI PNG Status Icons\157.png" />
+    <Resource Include="FFXI PNG Status Icons\158.png" />
+    <Resource Include="FFXI PNG Status Icons\159.png" />
+    <Resource Include="FFXI PNG Status Icons\16.png" />
+    <Resource Include="FFXI PNG Status Icons\160.png" />
+    <Resource Include="FFXI PNG Status Icons\161.png" />
+    <Resource Include="FFXI PNG Status Icons\162.png" />
+    <Resource Include="FFXI PNG Status Icons\163.png" />
+    <Resource Include="FFXI PNG Status Icons\164.png" />
+    <Resource Include="FFXI PNG Status Icons\165.png" />
+    <Resource Include="FFXI PNG Status Icons\166.png" />
+    <Resource Include="FFXI PNG Status Icons\167.png" />
+    <Resource Include="FFXI PNG Status Icons\168.png" />
+    <Resource Include="FFXI PNG Status Icons\169.png" />
+    <Resource Include="FFXI PNG Status Icons\17.png" />
+    <Resource Include="FFXI PNG Status Icons\170.png" />
+    <Resource Include="FFXI PNG Status Icons\171.png" />
+    <Resource Include="FFXI PNG Status Icons\172.png" />
+    <Resource Include="FFXI PNG Status Icons\173.png" />
+    <Resource Include="FFXI PNG Status Icons\174.png" />
+    <Resource Include="FFXI PNG Status Icons\175.png" />
+    <Resource Include="FFXI PNG Status Icons\176.png" />
+    <Resource Include="FFXI PNG Status Icons\177.png" />
+    <Resource Include="FFXI PNG Status Icons\178.png" />
+    <Resource Include="FFXI PNG Status Icons\179.png" />
+    <Resource Include="FFXI PNG Status Icons\18.png" />
+    <Resource Include="FFXI PNG Status Icons\180.png" />
+    <Resource Include="FFXI PNG Status Icons\181.png" />
+    <Resource Include="FFXI PNG Status Icons\182.png" />
+    <Resource Include="FFXI PNG Status Icons\183.png" />
+    <Resource Include="FFXI PNG Status Icons\184.png" />
+    <Resource Include="FFXI PNG Status Icons\185.png" />
+    <Resource Include="FFXI PNG Status Icons\186.png" />
+    <Resource Include="FFXI PNG Status Icons\187.png" />
+    <Resource Include="FFXI PNG Status Icons\188.png" />
+    <Resource Include="FFXI PNG Status Icons\189.png" />
+    <Resource Include="FFXI PNG Status Icons\19.png" />
+    <Resource Include="FFXI PNG Status Icons\190.png" />
+    <Resource Include="FFXI PNG Status Icons\191.png" />
+    <Resource Include="FFXI PNG Status Icons\192.png" />
+    <Resource Include="FFXI PNG Status Icons\193.png" />
+    <Resource Include="FFXI PNG Status Icons\194.png" />
+    <Resource Include="FFXI PNG Status Icons\195.png" />
+    <Resource Include="FFXI PNG Status Icons\196.png" />
+    <Resource Include="FFXI PNG Status Icons\197.png" />
+    <Resource Include="FFXI PNG Status Icons\198.png" />
+    <Resource Include="FFXI PNG Status Icons\199.png" />
+    <Resource Include="FFXI PNG Status Icons\2.png" />
+    <Resource Include="FFXI PNG Status Icons\20.png" />
+    <Resource Include="FFXI PNG Status Icons\200.png" />
+    <Resource Include="FFXI PNG Status Icons\201.png" />
+    <Resource Include="FFXI PNG Status Icons\202.png" />
+    <Resource Include="FFXI PNG Status Icons\203.png" />
+    <Resource Include="FFXI PNG Status Icons\204.png" />
+    <Resource Include="FFXI PNG Status Icons\205.png" />
+    <Resource Include="FFXI PNG Status Icons\206.png" />
+    <Resource Include="FFXI PNG Status Icons\207.png" />
+    <Resource Include="FFXI PNG Status Icons\208.png" />
+    <Resource Include="FFXI PNG Status Icons\209.png" />
+    <Resource Include="FFXI PNG Status Icons\21.png" />
+    <Resource Include="FFXI PNG Status Icons\210.png" />
+    <Resource Include="FFXI PNG Status Icons\211.png" />
+    <Resource Include="FFXI PNG Status Icons\212.png" />
+    <Resource Include="FFXI PNG Status Icons\213.png" />
+    <Resource Include="FFXI PNG Status Icons\214.png" />
+    <Resource Include="FFXI PNG Status Icons\215.png" />
+    <Resource Include="FFXI PNG Status Icons\216.png" />
+    <Resource Include="FFXI PNG Status Icons\217.png" />
+    <Resource Include="FFXI PNG Status Icons\218.png" />
+    <Resource Include="FFXI PNG Status Icons\219.png" />
+    <Resource Include="FFXI PNG Status Icons\22.png" />
+    <Resource Include="FFXI PNG Status Icons\220.png" />
+    <Resource Include="FFXI PNG Status Icons\221.png" />
+    <Resource Include="FFXI PNG Status Icons\222.png" />
+    <Resource Include="FFXI PNG Status Icons\223.png" />
+    <Resource Include="FFXI PNG Status Icons\224.png" />
+    <Resource Include="FFXI PNG Status Icons\225.png" />
+    <Resource Include="FFXI PNG Status Icons\226.png" />
+    <Resource Include="FFXI PNG Status Icons\227.png" />
+    <Resource Include="FFXI PNG Status Icons\228.png" />
+    <Resource Include="FFXI PNG Status Icons\229.png" />
+    <Resource Include="FFXI PNG Status Icons\23.png" />
+    <Resource Include="FFXI PNG Status Icons\230.png" />
+    <Resource Include="FFXI PNG Status Icons\231.png" />
+    <Resource Include="FFXI PNG Status Icons\232.png" />
+    <Resource Include="FFXI PNG Status Icons\233.png" />
+    <Resource Include="FFXI PNG Status Icons\234.png" />
+    <Resource Include="FFXI PNG Status Icons\235.png" />
+    <Resource Include="FFXI PNG Status Icons\236.png" />
+    <Resource Include="FFXI PNG Status Icons\237.png" />
+    <Resource Include="FFXI PNG Status Icons\238.png" />
+    <Resource Include="FFXI PNG Status Icons\239.png" />
+    <Resource Include="FFXI PNG Status Icons\24.png" />
+    <Resource Include="FFXI PNG Status Icons\240.png" />
+    <Resource Include="FFXI PNG Status Icons\241.png" />
+    <Resource Include="FFXI PNG Status Icons\242.png" />
+    <Resource Include="FFXI PNG Status Icons\243.png" />
+    <Resource Include="FFXI PNG Status Icons\244.png" />
+    <Resource Include="FFXI PNG Status Icons\245.png" />
+    <Resource Include="FFXI PNG Status Icons\246.png" />
+    <Resource Include="FFXI PNG Status Icons\247.png" />
+    <Resource Include="FFXI PNG Status Icons\248.png" />
+    <Resource Include="FFXI PNG Status Icons\249.png" />
+    <Resource Include="FFXI PNG Status Icons\25.png" />
+    <Resource Include="FFXI PNG Status Icons\250.png" />
+    <Resource Include="FFXI PNG Status Icons\251.png" />
+    <Resource Include="FFXI PNG Status Icons\252.png" />
+    <Resource Include="FFXI PNG Status Icons\253.png" />
+    <Resource Include="FFXI PNG Status Icons\254.png" />
+    <Resource Include="FFXI PNG Status Icons\255.png" />
+    <Resource Include="FFXI PNG Status Icons\256.png" />
+    <Resource Include="FFXI PNG Status Icons\257.png" />
+    <Resource Include="FFXI PNG Status Icons\258.png" />
+    <Resource Include="FFXI PNG Status Icons\259.png" />
+    <Resource Include="FFXI PNG Status Icons\26.png" />
+    <Resource Include="FFXI PNG Status Icons\260.png" />
+    <Resource Include="FFXI PNG Status Icons\261.png" />
+    <Resource Include="FFXI PNG Status Icons\262.png" />
+    <Resource Include="FFXI PNG Status Icons\263.png" />
+    <Resource Include="FFXI PNG Status Icons\264.png" />
+    <Resource Include="FFXI PNG Status Icons\265.png" />
+    <Resource Include="FFXI PNG Status Icons\266.png" />
+    <Resource Include="FFXI PNG Status Icons\267.png" />
+    <Resource Include="FFXI PNG Status Icons\268.png" />
+    <Resource Include="FFXI PNG Status Icons\269.png" />
+    <Resource Include="FFXI PNG Status Icons\27.png" />
+    <Resource Include="FFXI PNG Status Icons\270.png" />
+    <Resource Include="FFXI PNG Status Icons\271.png" />
+    <Resource Include="FFXI PNG Status Icons\272.png" />
+    <Resource Include="FFXI PNG Status Icons\273.png" />
+    <Resource Include="FFXI PNG Status Icons\274.png" />
+    <Resource Include="FFXI PNG Status Icons\275.png" />
+    <Resource Include="FFXI PNG Status Icons\276.png" />
+    <Resource Include="FFXI PNG Status Icons\277.png" />
+    <Resource Include="FFXI PNG Status Icons\278.png" />
+    <Resource Include="FFXI PNG Status Icons\279.png" />
+    <Resource Include="FFXI PNG Status Icons\28.png" />
+    <Resource Include="FFXI PNG Status Icons\280.png" />
+    <Resource Include="FFXI PNG Status Icons\281.png" />
+    <Resource Include="FFXI PNG Status Icons\282.png" />
+    <Resource Include="FFXI PNG Status Icons\283.png" />
+    <Resource Include="FFXI PNG Status Icons\284.png" />
+    <Resource Include="FFXI PNG Status Icons\285.png" />
+    <Resource Include="FFXI PNG Status Icons\286.png" />
+    <Resource Include="FFXI PNG Status Icons\287.png" />
+    <Resource Include="FFXI PNG Status Icons\288.png" />
+    <Resource Include="FFXI PNG Status Icons\289.png" />
+    <Resource Include="FFXI PNG Status Icons\29.png" />
+    <Resource Include="FFXI PNG Status Icons\290.png" />
+    <Resource Include="FFXI PNG Status Icons\291.png" />
+    <Resource Include="FFXI PNG Status Icons\292.png" />
+    <Resource Include="FFXI PNG Status Icons\293.png" />
+    <Resource Include="FFXI PNG Status Icons\294.png" />
+    <Resource Include="FFXI PNG Status Icons\295.png" />
+    <Resource Include="FFXI PNG Status Icons\296.png" />
+    <Resource Include="FFXI PNG Status Icons\297.png" />
+    <Resource Include="FFXI PNG Status Icons\298.png" />
+    <Resource Include="FFXI PNG Status Icons\299.png" />
+    <Resource Include="FFXI PNG Status Icons\3.png" />
+    <Resource Include="FFXI PNG Status Icons\30.png" />
+    <Resource Include="FFXI PNG Status Icons\300.png" />
+    <Resource Include="FFXI PNG Status Icons\301.png" />
+    <Resource Include="FFXI PNG Status Icons\302.png" />
+    <Resource Include="FFXI PNG Status Icons\303.png" />
+    <Resource Include="FFXI PNG Status Icons\304.png" />
+    <Resource Include="FFXI PNG Status Icons\305.png" />
+    <Resource Include="FFXI PNG Status Icons\306.png" />
+    <Resource Include="FFXI PNG Status Icons\307.png" />
+    <Resource Include="FFXI PNG Status Icons\308.png" />
+    <Resource Include="FFXI PNG Status Icons\309.png" />
+    <Resource Include="FFXI PNG Status Icons\31.png" />
+    <Resource Include="FFXI PNG Status Icons\310.png" />
+    <Resource Include="FFXI PNG Status Icons\311.png" />
+    <Resource Include="FFXI PNG Status Icons\312.png" />
+    <Resource Include="FFXI PNG Status Icons\313.png" />
+    <Resource Include="FFXI PNG Status Icons\314.png" />
+    <Resource Include="FFXI PNG Status Icons\315.png" />
+    <Resource Include="FFXI PNG Status Icons\316.png" />
+    <Resource Include="FFXI PNG Status Icons\317.png" />
+    <Resource Include="FFXI PNG Status Icons\318.png" />
+    <Resource Include="FFXI PNG Status Icons\319.png" />
+    <Resource Include="FFXI PNG Status Icons\32.png" />
+    <Resource Include="FFXI PNG Status Icons\320.png" />
+    <Resource Include="FFXI PNG Status Icons\321.png" />
+    <Resource Include="FFXI PNG Status Icons\322.png" />
+    <Resource Include="FFXI PNG Status Icons\323.png" />
+    <Resource Include="FFXI PNG Status Icons\324.png" />
+    <Resource Include="FFXI PNG Status Icons\325.png" />
+    <Resource Include="FFXI PNG Status Icons\326.png" />
+    <Resource Include="FFXI PNG Status Icons\327.png" />
+    <Resource Include="FFXI PNG Status Icons\328.png" />
+    <Resource Include="FFXI PNG Status Icons\329.png" />
+    <Resource Include="FFXI PNG Status Icons\33.png" />
+    <Resource Include="FFXI PNG Status Icons\330.png" />
+    <Resource Include="FFXI PNG Status Icons\331.png" />
+    <Resource Include="FFXI PNG Status Icons\332.png" />
+    <Resource Include="FFXI PNG Status Icons\333.png" />
+    <Resource Include="FFXI PNG Status Icons\334.png" />
+    <Resource Include="FFXI PNG Status Icons\335.png" />
+    <Resource Include="FFXI PNG Status Icons\336.png" />
+    <Resource Include="FFXI PNG Status Icons\337.png" />
+    <Resource Include="FFXI PNG Status Icons\338.png" />
+    <Resource Include="FFXI PNG Status Icons\339.png" />
+    <Resource Include="FFXI PNG Status Icons\34.png" />
+    <Resource Include="FFXI PNG Status Icons\340.png" />
+    <Resource Include="FFXI PNG Status Icons\341.png" />
+    <Resource Include="FFXI PNG Status Icons\342.png" />
+    <Resource Include="FFXI PNG Status Icons\343.png" />
+    <Resource Include="FFXI PNG Status Icons\344.png" />
+    <Resource Include="FFXI PNG Status Icons\345.png" />
+    <Resource Include="FFXI PNG Status Icons\346.png" />
+    <Resource Include="FFXI PNG Status Icons\347.png" />
+    <Resource Include="FFXI PNG Status Icons\348.png" />
+    <Resource Include="FFXI PNG Status Icons\349.png" />
+    <Resource Include="FFXI PNG Status Icons\35.png" />
+    <Resource Include="FFXI PNG Status Icons\350.png" />
+    <Resource Include="FFXI PNG Status Icons\351.png" />
+    <Resource Include="FFXI PNG Status Icons\352.png" />
+    <Resource Include="FFXI PNG Status Icons\353.png" />
+    <Resource Include="FFXI PNG Status Icons\354.png" />
+    <Resource Include="FFXI PNG Status Icons\355.png" />
+    <Resource Include="FFXI PNG Status Icons\356.png" />
+    <Resource Include="FFXI PNG Status Icons\357.png" />
+    <Resource Include="FFXI PNG Status Icons\358.png" />
+    <Resource Include="FFXI PNG Status Icons\359.png" />
+    <Resource Include="FFXI PNG Status Icons\36.png" />
+    <Resource Include="FFXI PNG Status Icons\360.png" />
+    <Resource Include="FFXI PNG Status Icons\361.png" />
+    <Resource Include="FFXI PNG Status Icons\362.png" />
+    <Resource Include="FFXI PNG Status Icons\363.png" />
+    <Resource Include="FFXI PNG Status Icons\364.png" />
+    <Resource Include="FFXI PNG Status Icons\365.png" />
+    <Resource Include="FFXI PNG Status Icons\366.png" />
+    <Resource Include="FFXI PNG Status Icons\367.png" />
+    <Resource Include="FFXI PNG Status Icons\368.png" />
+    <Resource Include="FFXI PNG Status Icons\369.png" />
+    <Resource Include="FFXI PNG Status Icons\37.png" />
+    <Resource Include="FFXI PNG Status Icons\370.png" />
+    <Resource Include="FFXI PNG Status Icons\371.png" />
+    <Resource Include="FFXI PNG Status Icons\372.png" />
+    <Resource Include="FFXI PNG Status Icons\373.png" />
+    <Resource Include="FFXI PNG Status Icons\374.png" />
+    <Resource Include="FFXI PNG Status Icons\375.png" />
+    <Resource Include="FFXI PNG Status Icons\376.png" />
+    <Resource Include="FFXI PNG Status Icons\377.png" />
+    <Resource Include="FFXI PNG Status Icons\378.png" />
+    <Resource Include="FFXI PNG Status Icons\379.png" />
+    <Resource Include="FFXI PNG Status Icons\38.png" />
+    <Resource Include="FFXI PNG Status Icons\380.png" />
+    <Resource Include="FFXI PNG Status Icons\381.png" />
+    <Resource Include="FFXI PNG Status Icons\382.png" />
+    <Resource Include="FFXI PNG Status Icons\383.png" />
+    <Resource Include="FFXI PNG Status Icons\384.png" />
+    <Resource Include="FFXI PNG Status Icons\385.png" />
+    <Resource Include="FFXI PNG Status Icons\386.png" />
+    <Resource Include="FFXI PNG Status Icons\387.png" />
+    <Resource Include="FFXI PNG Status Icons\388.png" />
+    <Resource Include="FFXI PNG Status Icons\389.png" />
+    <Resource Include="FFXI PNG Status Icons\39.png" />
+    <Resource Include="FFXI PNG Status Icons\390.png" />
+    <Resource Include="FFXI PNG Status Icons\391.png" />
+    <Resource Include="FFXI PNG Status Icons\392.png" />
+    <Resource Include="FFXI PNG Status Icons\393.png" />
+    <Resource Include="FFXI PNG Status Icons\394.png" />
+    <Resource Include="FFXI PNG Status Icons\395.png" />
+    <Resource Include="FFXI PNG Status Icons\396.png" />
+    <Resource Include="FFXI PNG Status Icons\397.png" />
+    <Resource Include="FFXI PNG Status Icons\398.png" />
+    <Resource Include="FFXI PNG Status Icons\399.png" />
+    <Resource Include="FFXI PNG Status Icons\4.png" />
+    <Resource Include="FFXI PNG Status Icons\40.png" />
+    <Resource Include="FFXI PNG Status Icons\400.png" />
+    <Resource Include="FFXI PNG Status Icons\401.png" />
+    <Resource Include="FFXI PNG Status Icons\402.png" />
+    <Resource Include="FFXI PNG Status Icons\403.png" />
+    <Resource Include="FFXI PNG Status Icons\404.png" />
+    <Resource Include="FFXI PNG Status Icons\405.png" />
+    <Resource Include="FFXI PNG Status Icons\406.png" />
+    <Resource Include="FFXI PNG Status Icons\407.png" />
+    <Resource Include="FFXI PNG Status Icons\408.png" />
+    <Resource Include="FFXI PNG Status Icons\409.png" />
+    <Resource Include="FFXI PNG Status Icons\41.png" />
+    <Resource Include="FFXI PNG Status Icons\410.png" />
+    <Resource Include="FFXI PNG Status Icons\411.png" />
+    <Resource Include="FFXI PNG Status Icons\412.png" />
+    <Resource Include="FFXI PNG Status Icons\413.png" />
+    <Resource Include="FFXI PNG Status Icons\414.png" />
+    <Resource Include="FFXI PNG Status Icons\415.png" />
+    <Resource Include="FFXI PNG Status Icons\416.png" />
+    <Resource Include="FFXI PNG Status Icons\417.png" />
+    <Resource Include="FFXI PNG Status Icons\418.png" />
+    <Resource Include="FFXI PNG Status Icons\419.png" />
+    <Resource Include="FFXI PNG Status Icons\42.png" />
+    <Resource Include="FFXI PNG Status Icons\420.png" />
+    <Resource Include="FFXI PNG Status Icons\421.png" />
+    <Resource Include="FFXI PNG Status Icons\422.png" />
+    <Resource Include="FFXI PNG Status Icons\423.png" />
+    <Resource Include="FFXI PNG Status Icons\424.png" />
+    <Resource Include="FFXI PNG Status Icons\425.png" />
+    <Resource Include="FFXI PNG Status Icons\426.png" />
+    <Resource Include="FFXI PNG Status Icons\427.png" />
+    <Resource Include="FFXI PNG Status Icons\428.png" />
+    <Resource Include="FFXI PNG Status Icons\429.png" />
+    <Resource Include="FFXI PNG Status Icons\43.png" />
+    <Resource Include="FFXI PNG Status Icons\430.png" />
+    <Resource Include="FFXI PNG Status Icons\431.png" />
+    <Resource Include="FFXI PNG Status Icons\432.png" />
+    <Resource Include="FFXI PNG Status Icons\433.png" />
+    <Resource Include="FFXI PNG Status Icons\434.png" />
+    <Resource Include="FFXI PNG Status Icons\435.png" />
+    <Resource Include="FFXI PNG Status Icons\436.png" />
+    <Resource Include="FFXI PNG Status Icons\437.png" />
+    <Resource Include="FFXI PNG Status Icons\438.png" />
+    <Resource Include="FFXI PNG Status Icons\439.png" />
+    <Resource Include="FFXI PNG Status Icons\44.png" />
+    <Resource Include="FFXI PNG Status Icons\440.png" />
+    <Resource Include="FFXI PNG Status Icons\441.png" />
+    <Resource Include="FFXI PNG Status Icons\442.png" />
+    <Resource Include="FFXI PNG Status Icons\443.png" />
+    <Resource Include="FFXI PNG Status Icons\444.png" />
+    <Resource Include="FFXI PNG Status Icons\445.png" />
+    <Resource Include="FFXI PNG Status Icons\446.png" />
+    <Resource Include="FFXI PNG Status Icons\447.png" />
+    <Resource Include="FFXI PNG Status Icons\448.png" />
+    <Resource Include="FFXI PNG Status Icons\449.png" />
+    <Resource Include="FFXI PNG Status Icons\45.png" />
+    <Resource Include="FFXI PNG Status Icons\450.png" />
+    <Resource Include="FFXI PNG Status Icons\451.png" />
+    <Resource Include="FFXI PNG Status Icons\452.png" />
+    <Resource Include="FFXI PNG Status Icons\453.png" />
+    <Resource Include="FFXI PNG Status Icons\454.png" />
+    <Resource Include="FFXI PNG Status Icons\455.png" />
+    <Resource Include="FFXI PNG Status Icons\456.png" />
+    <Resource Include="FFXI PNG Status Icons\457.png" />
+    <Resource Include="FFXI PNG Status Icons\458.png" />
+    <Resource Include="FFXI PNG Status Icons\459.png" />
+    <Resource Include="FFXI PNG Status Icons\46.png" />
+    <Resource Include="FFXI PNG Status Icons\460.png" />
+    <Resource Include="FFXI PNG Status Icons\461.png" />
+    <Resource Include="FFXI PNG Status Icons\462.png" />
+    <Resource Include="FFXI PNG Status Icons\463.png" />
+    <Resource Include="FFXI PNG Status Icons\464.png" />
+    <Resource Include="FFXI PNG Status Icons\465.png" />
+    <Resource Include="FFXI PNG Status Icons\466.png" />
+    <Resource Include="FFXI PNG Status Icons\467.png" />
+    <Resource Include="FFXI PNG Status Icons\468.png" />
+    <Resource Include="FFXI PNG Status Icons\469.png" />
+    <Resource Include="FFXI PNG Status Icons\47.png" />
+    <Resource Include="FFXI PNG Status Icons\470.png" />
+    <Resource Include="FFXI PNG Status Icons\471.png" />
+    <Resource Include="FFXI PNG Status Icons\472.png" />
+    <Resource Include="FFXI PNG Status Icons\473.png" />
+    <Resource Include="FFXI PNG Status Icons\474.png" />
+    <Resource Include="FFXI PNG Status Icons\475.png" />
+    <Resource Include="FFXI PNG Status Icons\476.png" />
+    <Resource Include="FFXI PNG Status Icons\477.png" />
+    <Resource Include="FFXI PNG Status Icons\478.png" />
+    <Resource Include="FFXI PNG Status Icons\479.png" />
+    <Resource Include="FFXI PNG Status Icons\48.png" />
+    <Resource Include="FFXI PNG Status Icons\480.png" />
+    <Resource Include="FFXI PNG Status Icons\481.png" />
+    <Resource Include="FFXI PNG Status Icons\482.png" />
+    <Resource Include="FFXI PNG Status Icons\483.png" />
+    <Resource Include="FFXI PNG Status Icons\484.png" />
+    <Resource Include="FFXI PNG Status Icons\485.png" />
+    <Resource Include="FFXI PNG Status Icons\486.png" />
+    <Resource Include="FFXI PNG Status Icons\487.png" />
+    <Resource Include="FFXI PNG Status Icons\488.png" />
+    <Resource Include="FFXI PNG Status Icons\489.png" />
+    <Resource Include="FFXI PNG Status Icons\49.png" />
+    <Resource Include="FFXI PNG Status Icons\490.png" />
+    <Resource Include="FFXI PNG Status Icons\491.png" />
+    <Resource Include="FFXI PNG Status Icons\492.png" />
+    <Resource Include="FFXI PNG Status Icons\493.png" />
+    <Resource Include="FFXI PNG Status Icons\494.png" />
+    <Resource Include="FFXI PNG Status Icons\495.png" />
+    <Resource Include="FFXI PNG Status Icons\496.png" />
+    <Resource Include="FFXI PNG Status Icons\497.png" />
+    <Resource Include="FFXI PNG Status Icons\498.png" />
+    <Resource Include="FFXI PNG Status Icons\499.png" />
+    <Resource Include="FFXI PNG Status Icons\5.png" />
+    <Resource Include="FFXI PNG Status Icons\50.png" />
+    <Resource Include="FFXI PNG Status Icons\500.png" />
+    <Resource Include="FFXI PNG Status Icons\501.png" />
+    <Resource Include="FFXI PNG Status Icons\502.png" />
+    <Resource Include="FFXI PNG Status Icons\503.png" />
+    <Resource Include="FFXI PNG Status Icons\504.png" />
+    <Resource Include="FFXI PNG Status Icons\505.png" />
+    <Resource Include="FFXI PNG Status Icons\506.png" />
+    <Resource Include="FFXI PNG Status Icons\507.png" />
+    <Resource Include="FFXI PNG Status Icons\508.png" />
+    <Resource Include="FFXI PNG Status Icons\509.png" />
+    <Resource Include="FFXI PNG Status Icons\51.png" />
+    <Resource Include="FFXI PNG Status Icons\510.png" />
+    <Resource Include="FFXI PNG Status Icons\511.png" />
+    <Resource Include="FFXI PNG Status Icons\512.png" />
+    <Resource Include="FFXI PNG Status Icons\513.png" />
+    <Resource Include="FFXI PNG Status Icons\514.png" />
+    <Resource Include="FFXI PNG Status Icons\515.png" />
+    <Resource Include="FFXI PNG Status Icons\516.png" />
+    <Resource Include="FFXI PNG Status Icons\517.png" />
+    <Resource Include="FFXI PNG Status Icons\518.png" />
+    <Resource Include="FFXI PNG Status Icons\519.png" />
+    <Resource Include="FFXI PNG Status Icons\52.png" />
+    <Resource Include="FFXI PNG Status Icons\520.png" />
+    <Resource Include="FFXI PNG Status Icons\521.png" />
+    <Resource Include="FFXI PNG Status Icons\522.png" />
+    <Resource Include="FFXI PNG Status Icons\523.png" />
+    <Resource Include="FFXI PNG Status Icons\524.png" />
+    <Resource Include="FFXI PNG Status Icons\525.png" />
+    <Resource Include="FFXI PNG Status Icons\526.png" />
+    <Resource Include="FFXI PNG Status Icons\527.png" />
+    <Resource Include="FFXI PNG Status Icons\528.png" />
+    <Resource Include="FFXI PNG Status Icons\529.png" />
+    <Resource Include="FFXI PNG Status Icons\53.png" />
+    <Resource Include="FFXI PNG Status Icons\530.png" />
+    <Resource Include="FFXI PNG Status Icons\531.png" />
+    <Resource Include="FFXI PNG Status Icons\532.png" />
+    <Resource Include="FFXI PNG Status Icons\533.png" />
+    <Resource Include="FFXI PNG Status Icons\534.png" />
+    <Resource Include="FFXI PNG Status Icons\535.png" />
+    <Resource Include="FFXI PNG Status Icons\536.png" />
+    <Resource Include="FFXI PNG Status Icons\537.png" />
+    <Resource Include="FFXI PNG Status Icons\538.png" />
+    <Resource Include="FFXI PNG Status Icons\539.png" />
+    <Resource Include="FFXI PNG Status Icons\54.png" />
+    <Resource Include="FFXI PNG Status Icons\540.png" />
+    <Resource Include="FFXI PNG Status Icons\541.png" />
+    <Resource Include="FFXI PNG Status Icons\542.png" />
+    <Resource Include="FFXI PNG Status Icons\543.png" />
+    <Resource Include="FFXI PNG Status Icons\544.png" />
+    <Resource Include="FFXI PNG Status Icons\545.png" />
+    <Resource Include="FFXI PNG Status Icons\546.png" />
+    <Resource Include="FFXI PNG Status Icons\547.png" />
+    <Resource Include="FFXI PNG Status Icons\548.png" />
+    <Resource Include="FFXI PNG Status Icons\549.png" />
+    <Resource Include="FFXI PNG Status Icons\55.png" />
+    <Resource Include="FFXI PNG Status Icons\550.png" />
+    <Resource Include="FFXI PNG Status Icons\551.png" />
+    <Resource Include="FFXI PNG Status Icons\552.png" />
+    <Resource Include="FFXI PNG Status Icons\553.png" />
+    <Resource Include="FFXI PNG Status Icons\554.png" />
+    <Resource Include="FFXI PNG Status Icons\555.png" />
+    <Resource Include="FFXI PNG Status Icons\556.png" />
+    <Resource Include="FFXI PNG Status Icons\557.png" />
+    <Resource Include="FFXI PNG Status Icons\558.png" />
+    <Resource Include="FFXI PNG Status Icons\559.png" />
+    <Resource Include="FFXI PNG Status Icons\56.png" />
+    <Resource Include="FFXI PNG Status Icons\560.png" />
+    <Resource Include="FFXI PNG Status Icons\561.png" />
+    <Resource Include="FFXI PNG Status Icons\562.png" />
+    <Resource Include="FFXI PNG Status Icons\563.png" />
+    <Resource Include="FFXI PNG Status Icons\564.png" />
+    <Resource Include="FFXI PNG Status Icons\565.png" />
+    <Resource Include="FFXI PNG Status Icons\566.png" />
+    <Resource Include="FFXI PNG Status Icons\567.png" />
+    <Resource Include="FFXI PNG Status Icons\568.png" />
+    <Resource Include="FFXI PNG Status Icons\569.png" />
+    <Resource Include="FFXI PNG Status Icons\57.png" />
+    <Resource Include="FFXI PNG Status Icons\570.png" />
+    <Resource Include="FFXI PNG Status Icons\571.png" />
+    <Resource Include="FFXI PNG Status Icons\572.png" />
+    <Resource Include="FFXI PNG Status Icons\573.png" />
+    <Resource Include="FFXI PNG Status Icons\574.png" />
+    <Resource Include="FFXI PNG Status Icons\575.png" />
+    <Resource Include="FFXI PNG Status Icons\576.png" />
+    <Resource Include="FFXI PNG Status Icons\577.png" />
+    <Resource Include="FFXI PNG Status Icons\578.png" />
+    <Resource Include="FFXI PNG Status Icons\579.png" />
+    <Resource Include="FFXI PNG Status Icons\58.png" />
+    <Resource Include="FFXI PNG Status Icons\580.png" />
+    <Resource Include="FFXI PNG Status Icons\581.png" />
+    <Resource Include="FFXI PNG Status Icons\582.png" />
+    <Resource Include="FFXI PNG Status Icons\583.png" />
+    <Resource Include="FFXI PNG Status Icons\584.png" />
+    <Resource Include="FFXI PNG Status Icons\585.png" />
+    <Resource Include="FFXI PNG Status Icons\586.png" />
+    <Resource Include="FFXI PNG Status Icons\587.png" />
+    <Resource Include="FFXI PNG Status Icons\588.png" />
+    <Resource Include="FFXI PNG Status Icons\589.png" />
+    <Resource Include="FFXI PNG Status Icons\59.png" />
+    <Resource Include="FFXI PNG Status Icons\590.png" />
+    <Resource Include="FFXI PNG Status Icons\591.png" />
+    <Resource Include="FFXI PNG Status Icons\592.png" />
+    <Resource Include="FFXI PNG Status Icons\593.png" />
+    <Resource Include="FFXI PNG Status Icons\594.png" />
+    <Resource Include="FFXI PNG Status Icons\595.png" />
+    <Resource Include="FFXI PNG Status Icons\596.png" />
+    <Resource Include="FFXI PNG Status Icons\597.png" />
+    <Resource Include="FFXI PNG Status Icons\598.png" />
+    <Resource Include="FFXI PNG Status Icons\599.png" />
+    <Resource Include="FFXI PNG Status Icons\6.png" />
+    <Resource Include="FFXI PNG Status Icons\60.png" />
+    <Resource Include="FFXI PNG Status Icons\600.png" />
+    <Resource Include="FFXI PNG Status Icons\601.png" />
+    <Resource Include="FFXI PNG Status Icons\602.png" />
+    <Resource Include="FFXI PNG Status Icons\603.png" />
+    <Resource Include="FFXI PNG Status Icons\604.png" />
+    <Resource Include="FFXI PNG Status Icons\605.png" />
+    <Resource Include="FFXI PNG Status Icons\606.png" />
+    <Resource Include="FFXI PNG Status Icons\607.png" />
+    <Resource Include="FFXI PNG Status Icons\608.png" />
+    <Resource Include="FFXI PNG Status Icons\609.png" />
+    <Resource Include="FFXI PNG Status Icons\61.png" />
+    <Resource Include="FFXI PNG Status Icons\610.png" />
+    <Resource Include="FFXI PNG Status Icons\611.png" />
+    <Resource Include="FFXI PNG Status Icons\612.png" />
+    <Resource Include="FFXI PNG Status Icons\613.png" />
+    <Resource Include="FFXI PNG Status Icons\614.png" />
+    <Resource Include="FFXI PNG Status Icons\615.png" />
+    <Resource Include="FFXI PNG Status Icons\616.png" />
+    <Resource Include="FFXI PNG Status Icons\617.png" />
+    <Resource Include="FFXI PNG Status Icons\618.png" />
+    <Resource Include="FFXI PNG Status Icons\619.png" />
+    <Resource Include="FFXI PNG Status Icons\62.png" />
+    <Resource Include="FFXI PNG Status Icons\620.png" />
+    <Resource Include="FFXI PNG Status Icons\621.png" />
+    <Resource Include="FFXI PNG Status Icons\622.png" />
+    <Resource Include="FFXI PNG Status Icons\623.png" />
+    <Resource Include="FFXI PNG Status Icons\624.png" />
+    <Resource Include="FFXI PNG Status Icons\625.png" />
+    <Resource Include="FFXI PNG Status Icons\626.png" />
+    <Resource Include="FFXI PNG Status Icons\627.png" />
+    <Resource Include="FFXI PNG Status Icons\628.png" />
+    <Resource Include="FFXI PNG Status Icons\629.png" />
+    <Resource Include="FFXI PNG Status Icons\63.png" />
+    <Resource Include="FFXI PNG Status Icons\630.png" />
+    <Resource Include="FFXI PNG Status Icons\631.png" />
+    <Resource Include="FFXI PNG Status Icons\632.png" />
+    <Resource Include="FFXI PNG Status Icons\633.png" />
+    <Resource Include="FFXI PNG Status Icons\634.png" />
+    <Resource Include="FFXI PNG Status Icons\635.png" />
+    <Resource Include="FFXI PNG Status Icons\636.png" />
+    <Resource Include="FFXI PNG Status Icons\637.png" />
+    <Resource Include="FFXI PNG Status Icons\638.png" />
+    <Resource Include="FFXI PNG Status Icons\639.png" />
+    <Resource Include="FFXI PNG Status Icons\64.png" />
+    <Resource Include="FFXI PNG Status Icons\65.png" />
+    <Resource Include="FFXI PNG Status Icons\66.png" />
+    <Resource Include="FFXI PNG Status Icons\67.png" />
+    <Resource Include="FFXI PNG Status Icons\68.png" />
+    <Resource Include="FFXI PNG Status Icons\69.png" />
+    <Resource Include="FFXI PNG Status Icons\7.png" />
+    <Resource Include="FFXI PNG Status Icons\70.png" />
+    <Resource Include="FFXI PNG Status Icons\71.png" />
+    <Resource Include="FFXI PNG Status Icons\72.png" />
+    <Resource Include="FFXI PNG Status Icons\73.png" />
+    <Resource Include="FFXI PNG Status Icons\74.png" />
+    <Resource Include="FFXI PNG Status Icons\75.png" />
+    <Resource Include="FFXI PNG Status Icons\76.png" />
+    <Resource Include="FFXI PNG Status Icons\77.png" />
+    <Resource Include="FFXI PNG Status Icons\78.png" />
+    <Resource Include="FFXI PNG Status Icons\79.png" />
+    <Resource Include="FFXI PNG Status Icons\8.png" />
+    <Resource Include="FFXI PNG Status Icons\80.png" />
+    <Resource Include="FFXI PNG Status Icons\81.png" />
+    <Resource Include="FFXI PNG Status Icons\82.png" />
+    <Resource Include="FFXI PNG Status Icons\83.png" />
+    <Resource Include="FFXI PNG Status Icons\84.png" />
+    <Resource Include="FFXI PNG Status Icons\85.png" />
+    <Resource Include="FFXI PNG Status Icons\86.png" />
+    <Resource Include="FFXI PNG Status Icons\87.png" />
+    <Resource Include="FFXI PNG Status Icons\88.png" />
+    <Resource Include="FFXI PNG Status Icons\89.png" />
+    <Resource Include="FFXI PNG Status Icons\9.png" />
+    <Resource Include="FFXI PNG Status Icons\90.png" />
+    <Resource Include="FFXI PNG Status Icons\91.png" />
+    <Resource Include="FFXI PNG Status Icons\92.png" />
+    <Resource Include="FFXI PNG Status Icons\93.png" />
+    <Resource Include="FFXI PNG Status Icons\94.png" />
+    <Resource Include="FFXI PNG Status Icons\95.png" />
+    <Resource Include="FFXI PNG Status Icons\96.png" />
+    <Resource Include="FFXI PNG Status Icons\97.png" />
+    <Resource Include="FFXI PNG Status Icons\98.png" />
+    <Resource Include="FFXI PNG Status Icons\99.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
